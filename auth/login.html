@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="/Frontend/assets/css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black text-[20px] md:text-[30px] lg:text-[16px]">
+    <main
+      class="mainLogin flex justify-center items-center pt-12 md:pt-12 lg:pt-10 "
+    >
+      <div
+        class="loginSon flex flex-col lg:flex-row justify-center items-center w-full lg:w-[65%]  h-auto lg:h-[90vh] text-white/90 mb-16 border-[1px] border-gray-900  gap-14 md:gap-20 lg:gap-0  rounded pb-6  md:pb-12 lg:pb-0 "
+      >
+        <section
+          class="bgImageLoginSec relative bg-[url('/Frontend/assets/Images/gymhouse.jpg')] flex flex-col md:justify-center lg:justify-around bg-no-repeat bg-cover bg-bottom w-full lg:w-[50%] z-50 rounded h-screen lg:h-[90vh] px-7 md:px-10 lg:px-6 gap-8 md:gap-12 lg:gap-8 py-5 md:py-8 lg:py-3"
+        >
+          <div class="absolute inset-0 bg-black/60"></div>
+          
+          <div class=" relative flex flex-col gap-10 md:gap-16 lg:gap-6 mt-8 md:mt-0 lg:mt-7">
+            <h2 class="text-[36px] sm:text-[20px] md:text-7xl lg:text-[40px] text-red-600 font-bold leading-12 md:leading-20 lg:leading-11 opacity-100 ">Transform your body and appear smart<span class="text-white"> !</span></h2>
+            <p class="text-[20px] md:text-[30px] lg:text-[15px] md:pr-32 lg:pr-10 text-gray-300">Enrol with us in just a few clicks and experience the best of results </p>
+            
+            <div class="flex flex-row gap-2 items-center lg:w-60 ">
+              <span class="w-20 h-1.5 md:w-40 md:h-3 lg:w-20 lg:h-1 bg-red-600 rounded-2xl"></span>
+              <span class="w-2 h-1.5 md:w-3 md:h-3 lg:w-2.5 lg:h-1 bg-red-400 rounded-full"></span>
+              <span class="w-1.5 h-1.5 md:w-3 md:h-3 lg:w-2.5 lg:h-1 bg-red-300 rounded-full"></span>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="loginFormSec w-full lg:w-[50%] justify-center items-center rounded-2xl lg:rounded-none bg-black h-auto"
+        >
+          <form action="" class="flex flex-col items-center justify-center w-full text-white gap-5 md:gap-6 lg:gap-2 h-auto  lg:h-[86vh] px-7 md:px-10 lg:px-6">
+            <div class="flex flex-col justify-center items-center text-center">
+              <h2 class="text-[30px] sm:text-[20px] md:text-5xl lg:text-[35px]">Welcome Back to GymHub</h2>
+              <p class=" text-white/60 text-[20px] md:text-[30px] lg:text-[18px]">Login to your account</p>
+            </div>
+
+            <div class="w-full mt-3 md:mt-5 lg:mt-2">
+              <div
+                class="email flex flex-col w-full gap-2 md:gap-3 lg:gap-1 mt-3 md:mt-3 lg:mt-2"
+              >
+                <label for="" class="font-semibold  text-white/80">Email:</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your Email"
+                  class="email w-full py-3 px-3 rounded border-2 border-white/15  text-white/90 bg-black/60 outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <div
+                class="password flex flex-col w-full gap-2 md:gap-3 lg:gap-1 mt-3 md:mt-5 lg:mt-2"
+              >
+                <label for="" class="font-semibold text-white/80">Password:</label>
+                <div
+                  class="flex flex-row justify-between items-center w-full py-3 px-3 rounded border-2 border-white/15  text-white/90 bg-black/60 outline-none  gap-3"
+                >
+                  <input
+                    type="password"
+                    name="password"
+                    id="email"
+                    placeholder="Enter your Password"
+                    class="password outline-none w-full"
+                  />
+                  <a href="">....</a>
+                </div>
+
+                <div class="rememberForgotPasswordDiv flex flex-row justify-between w-full text-white/50 pt-1">
+                  <div class="rememberMeDiv flex flex-row sm:flex-col md:flex-row lg:flex-row gap-2 items-center">
+                    <input type="checkbox" name="checkbox" class="checkbox accent-red-700 h-4 w-4 md:h-6 md:w-6 lg:w-4 lg:h-4 opacity-100">
+                    <p
+                  class="text-[16px] md:text-[27px] lg:text-[15px]"
+                  >
+                    Remember me
+                  </p>
+                  </div>
+                  
+                  <a href="/Frontend/auth/forgotPassword.html" class="text-[16px] md:text-[27px] lg:text-[15px] hover:text-red-600  text-white/80">Forgot Password</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="signUp flex w-full justify-center items-center ">
+                <a href="" class="flex font-semibold w-full justify-center items-center py-3 px-3 rounded bg-red-600 mt-10 md:mt-12 lg:mt-5 border-2 border-white/50 hover:bg-linear-to-r from-red-800 via-red-400 to-white/30 hover:font-bold" >Login</a>
+            </div>
+
+            <div class="flex flex-row justify-center items-center w-full gap-5 mt-10 md:mt-10 lg:mt-7 text-[16px] md:text-[23px] lg:text-[15px]">
+                <span class="w-full md:w-[50%]  lg:w-75 border h-[1px] bg-gray-500 opacity-20"></span>
+                <p class="">Or</p>
+                <span class="w-full md:w-[50%] lg:w-75 border h-[1px] bg-gray-500 opacity-20"></span>
+            </div>
+
+            <div class="flex flex-col md:flex-row lg:flex-row items-center w-full gap-5 lg:gap-3 pt-6 md:pt-6 lg:pt-4">
+              <div class="flex flex-row gap-3 w-full py-1 md:py-2 lg:py-1 px-4 lg:px-2 justify-center items-center rounded border-2 border-white/15  text-white/90 bg-black/60 hover:text-red-600">
+                <img src="/Frontend/assets/Images/facebooklogo2-removebg-preview.png" alt="" class="w-10 h-10 md:w-18 md:h-14 lg:w-12 lg:h-10 ">
+                <a href="" class="text-[16px] md:text-[23px] lg:text-[14px]  text-white/80 hover:text-red-600">Continue with Google</a>
+              </div>
+
+              <div class="flex flex-row gap-3 lg:gap-0.5 w-full py-1 md:py-2 lg:py-1 px-4 lg:px-0 justify-center items-center rounded border-2 border-white/15  text-white/90 bg-black/60 hover:text-red-600">
+                <img src="/Frontend/assets/Images/facebooklogo2-removebg-preview.png" alt="" class="w-10 h-10 md:w-18 md:h-14 lg:w-12 lg:h-10 ">
+                <a href="" class="text-[16px] md:text-[23px] lg:text-[14px]  text-white/80 hover:text-red-600">Continue with Facebook</a>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-1 md:gap-3 lg:gap-1 text-white/50  mt-3.5 text-[18px] md:text-[27px] lg:text-[16px]">Don't have an account?  <a href="/Frontend/auth/signUp.html" class="  hover:text-red-600  text-white/80">Sign Up</a> </div>
+
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="/Frontend/assets/js/login.js"></script>
+  </body>
+</html>

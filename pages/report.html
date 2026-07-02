@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Page</title>
+
+    <link rel="stylesheet" href="/Frontend/assets/css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="https://googleapis.com" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-black w-full text-white/70 text-[18px] sm:text-[20px] md:text-[27px] lg:text-[16px] font-sans h-[100vh] overflow-x-hidden select-none"
+  >
+    <div
+      class="reportContainer flex lg:flex lg:flex-row w-full h-auto relative z-[100%]"
+    >
+      <aside
+        class="flex flex-col w-[50vw] md:w-[50vw] lg:w-[15vw] h-auto md:h-[100vh] gap-3 bg-gray-500 text-black sticky top-0 pb-6 hidden lg:block"
+      >
+        <div
+          class="top flex flex-row w-full justify-between items-center bg-white/10"
+        >
+          <div
+            class="logoDiv flex flex-row gap-0 justify-center items-center px-7 md:px-10 lg:px-10"
+          >
+            <a
+              href=""
+              class="text-3xl md:text-4xl lg:text-3xl text-red-800 opacity-35 font-bold"
+              >II</a
+            >
+            <a href="" class="text-2xl md:text-[30px] lg:text-[20px] font-bold"
+              ><span
+                class="text-3xl md:text-4xl lg:text-3xl text-red-600 font-bold font-sans"
+                >G</span
+              >ym<span
+                class="text-3xl md:text-4xl lg:text-3xl text-red-600 opacity-80 font-bold"
+                >h</span
+              >ub</a
+            >
+          </div>
+          <div class="close lg:hidden" id="close-btn">
+            <span class="material-symbols-outlined">close</span>
+            <!-- <span class="material-symbols-outlined">menu</span> -->
+          </div>
+        </div>
+
+        <div class="imgDiv flex flex-col justify-center items-center">
+          <img
+            src="/Frontend/assets/Images/jane.jpg"
+            alt=""
+            class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] rounded-full"
+          />
+          <h4
+            class="text-black/60 font-semibold text-[16px] md:text-[28px] lg:text-[13px]"
+          >
+            Steve Harvers
+          </h4>
+        </div>
+
+        <div
+          class="sidebar flex flex-col justify-between w-full px-7 md:px-10 lg:px-10 h-[86vh] relative pt-4 pb-2"
+        >
+          <div class="flex flex-col gap-4 md:gap-2 lg:gap-2">
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] md:h-[8vh] lg:h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">dashboard</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Dashboard
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">payments</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Payments
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">settings</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Settings
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">groups_2</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Trainers
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold"
+                >account_circle</span
+              >
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Profile
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">report</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Report
+              </h3>
+            </a>
+          </div>
+
+          <div class="logout">
+            <a
+              href=""
+              class="flex flex-col gap-1 md:gap-2 lg:gap-1 items-center w-full h-[7vh] transition-all duration-300 ease-in"
+            >
+              <span class="material-symbols-outlined font-bold">logout</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Logout
+              </h3>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main class="contentMainContainer w-full relative">
+        <div
+          class="contentSonContainer flex flex-col w-full h-auto px-5 md:px-10 lg:px-8 pt-3 gap-16 sm:gap-18 md:gap-20 lg:gap-6 pb-3"
+        >
+          <h2
+            class="font-bold text-[22px] md:text-[30px] lg:text-[20px] text-white/85"
+          >
+            Report
+          </h2>
+
+          <section
+            class="firstSection flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-3 w-full"
+          >
+            <div
+              class="firsSectionSonDiv1 flex flex-col justify-around w-full gap-1 p-2 bg-white/20 rounded-2xl py-1 lg:py-2 px-4 md:px-6 lg:px-4 h-[24vh] sm:h-[20vh] md:h-[20vh] lg:h-[90px]"
+            >
+              <div class="incomeDot flex flex-row justify-between items-center">
+                <div class="incomeIconDiv flex flex-row gap-1 items-center">
+                  <span
+                    class="material-symbols-outlined text-[10px] text-green-800"
+                    >currency_exchange</span
+                  >
+                  <p>Total Income</p>
+                </div>
+
+                <div class="3DotsDiv flex flex-col gap-1">
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <p class="font-bold">$52,400</p>
+              <div
+                class="flex flex-row items-center gap-2 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[13px]"
+              >
+                <p
+                  class="flex flex-row items-center text-green-800 font-semibold"
+                >
+                  25%<span class="mt-1">^</span>
+                </p>
+                <span class="text-white/30">+$245 today</span>
+              </div>
+            </div>
+
+            <div
+              class="firsSectionSonDiv2 flex flex-col justify-around w-full gap-1 p-2 bg-white/20 rounded-2xl py-1 lg:py-2 px-4 md:px-6 lg:px-4 h-[24vh] sm:h-[20vh] md:h-[20vh] lg:h-[90px]"
+            >
+              <div
+                class="expenseDot flex flex-row justify-between items-center"
+              >
+                <div class="expenseIconDiv flex flex-row gap-1 items-center">
+                  <span
+                    class="material-symbols-outlined text-[10px] text-red-600"
+                    >currency_exchange</span
+                  >
+                  <p>Total Expense</p>
+                </div>
+
+                <div class="3DotsDiv flex flex-col gap-1">
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <p class="font-bold">$1,900</p>
+              <div
+                class="flex flex-row items-center gap-2 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[13px]"
+              >
+                <p
+                  class="flex flex-row items-center text-red-600 font-semibold"
+                >
+                  18%<span class="mt-1">^</span>
+                </p>
+                <span class="text-white/30">+$48 today</span>
+              </div>
+            </div>
+
+            <div
+              class="firsSectionSonDiv3 flex flex-col  w-full gap-5 sm:gap-7 md:gap-9 lg:gap-1.5 py-2 sm:py-3 md:py-3.5 lg:py-2  bg-white/20 rounded-2xl px-4 md:px-6 lg:px-4 h-[24vh] sm:h-[20vh] md:h-[20vh] lg:h-[90px]"
+            >
+              <div class="incomeDot flex flex-row justify-between items-center">
+                <div class="incomeIconDiv flex flex-row gap-1 items-center">
+                  <span class="material-symbols-outlined text-[10px]"
+                    >groups_2</span
+                  >
+                  <p>Total Members</p>
+                </div>
+
+                <div class="3DotsDiv flex flex-col gap-1">
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <p class="font-bold">986</p>
+              <!--  -->
+            </div>
+
+            <div
+              class="firsSectionSonDiv4 flex flex-col justify-around w-full gap-1 p-2 bg-white/20 rounded-2xl py-1 lg:py-2 px-4 md:px-6 lg:px-4 h-[24vh] sm:h-[20vh] md:h-[20vh] lg:h-[90px]"
+            >
+              <div class="checkDot flex flex-row justify-between items-center">
+                <div class="checkIconDiv flex flex-row gap-1 items-center">
+                  <span
+                    class="material-symbols-outlined text-[10px] text-orange-500"
+                    >check</span
+                  >
+                  <p>Today Checked In</p>
+                </div>
+
+                <div class="3DotsDiv flex flex-col gap-1">
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                  <div
+                    class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                  ></div>
+                </div>
+              </div>
+              <p class="font-bold">930</p>
+              <div
+                class="flex flex-row items-center gap-2 text-[16px] sm:text-[18px] md:text-[20px] lg:text-[13px]"
+              >
+                <p
+                  class="flex flex-row items-center text-orange-500 font-semibold"
+                >
+                  87%<span class="mt-1">^</span>
+                </p>
+                <span class="text-white/30">+389 today</span>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="secondSection flex flex-col sm:flex-col md:grid md:grid-cols-1 lg:flex lg:flex-row w-full gap-3 lg:gap-3 h-auto"
+          >
+            <div
+              class="secondSectionSonDiv1 flex flex-col gap-4 sm:gap-5 md:gap-8 lg:gap-2 items-center w-full lg:w-[50%] bg-white/10 lg:h-auto h-auto rounded-2xl p-5 md:p-7 lg:p-4"
+            >
+              <div class="membershipGoldDiv flex flex-col w-full mt-7 lg:mt-0">
+                <div
+                  class="memebership3DotsDiv flex flex-row justify-between gap-1 w-full items-center"
+                >
+                  <p class="tracking-wide">Membership Target</p>
+
+                  <div class="3DotsDiv flex flex-col gap-1">
+                    <div
+                      class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                    ></div>
+                    <div
+                      class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                    ></div>
+                    <div
+                      class="dot w-[3px] h-[3px] md:w-[5px] md:h-[5px] lg:w-[3px] lg:h-[3px] bg-white/70 rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row gap-1 text-white/20 text-sm sm:text-[22px] md:text-[24px] lg:text-sm"
+                >
+                  Gold
+                  <a href="#" class="flex mb-2 text-sm font-light rotate-180"
+                    >^</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="semiCircle relative flex items-center w-62 h-32 sm:w-64 sm:h-32 md:w-100 md:h-50 lg:w-64 lg:h-32 overflow-hidden"
+              >
+                <!-- bg arc-->
+                <div
+                  class="absolute inset-0 w-[100%] h-[100%] sm:w-64 sm:h-64 md:w-[100%] md:h-[100%] lg:w-64 lg:h-64 border-[35px] md:border-[6vh]  md:border-b-0  lg:border-[35px] border-l-red-400 border-t-red-300 border-r-red-100 border-b-0 rounded-t-full "
+                ></div>
+
+                <!-- Apply text in the center -->
+                <div
+                  class="absolute top-14  sm:top-16 md:top-20 lg:top-14 left-1/2 -translate-x-1/2 text-center pb-4"
+                >
+                  <p class="lg:text-[16px] font-bold text-red-600">75%</p>
+                  <p class=" text-[16px] sm:text-[18px] md:text-[20px] lg:text-[13px] text-gray-200">#750,000 / #1M</p>
+                </div>
+
+                
+              </div>
+
+              <div
+                  class="text-center flex flex-col w-full gap-0.5"
+                >
+                  <h5>It's higher than yesterday</h5>
+                  <div class="targetAndTodayDiv flex flex-row w-full justify-center gap-6 md:gap-8 lg:gap-4">
+                    <div class="targetDiv flex flex-col items-center justify-center">
+                      <p class="text-white/50 font-light">Target</p>
+                      <h3 class="flex flex-row tracking-tight">
+                        300
+                        <span class="rotate-90 text-red-600"> -> </span>
+                      </h3>
+                    </div>
+
+                    <div class="TodayDiv flex flex-col items-center justify-center">
+                      <p class="text-white/50 font-light">Today</p>
+                      <h3 class="flex flex-row tracking-tight">
+                        300
+                        <span class="rotate-270 text-green-700"> -> </span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div
+              class="secondSectionSonDiv2 flex flex-col w-full bg-white/10 lg:h-auto h-screen rounded-2xl gap-4 sm:gap-5 md:gap-8 lg:gap-2 p-5 md:p-7 lg:p-4">
+              <div class="membershipStatusHeaderDiv flex flex-row w-full justify-between items-center mt-7 lg:mt-0">
+                <h2 class="pr-11 lg:pr-0 md:pr-0">Membership Status Report</h2>
+                <div class="flex flex-col lg:flex-row gap-1 md:gap-3 lg:gap-3 items-start lg:items-center text-sm  md:text-[24px] lg:text-sm">
+                  <div class="flex flex-row gap-0.5 md:gap-1 lg:gap-2 items-center"><span class="w-2 h-2 md:w-3 md:h-3 lg:w-3 lg:h-3 rounded-full bg-amber-400 "></span>Gold</div>
+                  <div class="flex flex-row gap-0.5 md:gap-1 lg:gap-2 items-center"><span class="w-2 h-2 md:w-3 md:h-3 lg:w-3 lg:h-3 rounded-full bg-white/50"></span>Silver</div>
+                  <div class="flex flex-row gap-0.5 md:gap-1 lg:gap-2 items-center"><span class="w-2 h-2 md:w-3 md:h-3 lg:w-3 lg:h-3 rounded-full bg-red-500"></span>Platinum</div>
+                </div>
+              </div>
+
+              <div class="membershipStatusChatDiv flex flex-col w-full mt-16 lg:mt-0 text-sm  md:text-[24px] lg:text-sm">
+                <div class="numbers flex flex-col gap-6  lg:gap-4 md:px-2 lg:px-3">
+                  <h4 class="flex flex-row gap-2 items-center">1000<span class="w-full border-b border-dashed opacity-65"></span></h4>
+                  <h4 class="flex flex-row gap-2 items-center pl-2 md:pl-3 lg:pl-2">800<span class="w-full border-b border-dashed opacity-65"></span></h4>
+                  <h4 class="flex flex-row gap-2 items-center pl-2 md:pl-3 lg:pl-2">600<span class="w-full border-b border-dashed opacity-65"></span></h4>
+                  <h4 class="flex flex-row gap-2 items-center pl-2 md:pl-3 lg:pl-2">400<span class="w-full border-b border-dashed opacity-65"></span></h4>
+                  <h4 class="flex flex-row gap-2 items-center pl-2 md:pl-3 lg:pl-2">200<span class="w-full border-b border-dashed opacity-65"></span></h4>
+                  <h4 class="flex flex-row gap-2 items-center pl-6 md:pl-10 lg:pl-6">0<span class="w-full border-b border-dashed opacity-65"></span></h4>
+                </div>
+
+                <div class="months flex flex-row justify-center gap-0 md:gap-3 lg:gap-7 w-full mt-2 text-[10px]  md:text-[24px] lg:text-sm md:pl-10 lg:pl-10 ">
+                  <h5 class="-rotate-90 lg:rotate-none">Jan</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Feb</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Mar</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Apr</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">May</h5>
+                  <h5 class="-rotate-90 lg:rotate-none text-amber-400">Jun</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Jul</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Aug</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Sept</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Oct</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Nov</h5>
+                  <h5 class="-rotate-90 lg:rotate-none">Dec</h5>
+                </div>
+              </div>
+            
+            </div>
+          </section>
+
+          <section class="thirdSection">
+            <div class="thirdSectionSonDiv">
+              
+
+            </div>
+
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

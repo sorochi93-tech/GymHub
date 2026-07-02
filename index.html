@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <!-- <script src="./assets/js/main.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black opacity-100 text-[18px] md:text-[27px] lg:text-[16px]">
+    <header class="z-100 fixed top-0 w-full justify-between ">
+      <div
+        class="navbar flex flex-row justify-between bg-gray-200 border-b-2 border-gray-300 items-center w-full px-7 md:px-10 lg:px-10 sm:px-3 py-3 h-20 md:h-24 lg:h-16"
+      >
+        <section
+          class="logoSec flex flex-row items-center justify-between w-full lg:w-40"
+        >
+
+          <div
+            class="logoDiv flex flex-row gap-0 items-center "
+          >
+            <a
+              href=""
+              class="text-4xl md:text-6xl lg:text-4xl text-red-800 opacity-35 font-bold"
+              >II</a
+            >
+            <a href="" class=" text-3xl md:text-[40px] lg:text-[30px] font-bold"
+              ><span
+                class="text-4xl md:text-6xl lg:text-4xl text-red-600 font-bold font-sans"
+                >G</span
+              >ym<span
+                class="text-4xl md:text-6xl lg:text-4xl text-red-600 opacity-80 font-bold"
+                >h</span
+              >ub</a
+            >
+          </div>
+
+          <button id="menu-btn" class=" group flex flex-col items-center justify-between lg:hidden gap-1 md:gap-2 mt-1 mb-1 focus:outline-none ">
+            <!-- top line -->
+            <span class=" w-8 md:w-16  h-[3px] md:h-[5px] bg-black  transition-all duration-300 origin-left group-open: rotate-52 font-bold"></span>
+            <!-- middle line -->
+            <span class=" w-5 md:w-12  h-[3px] md:h-[5px] bg-black font-semibold transition-all duration-300 group-open: opacity-0"></span>
+            <!-- bottom line -->
+            <span class=" w-8 md:w-16  h-[3px] md:h-[5px] bg-black font-semibold transition-all duration-300 origin-left group-open: -rotate-47"></span>
+          </button>
+        </section>
+
+        <section class="ulSec hidden md-hidden lg:block">
+          <ul
+            class="flex flex-row w-full justify-center items-center text-[16px] gap-4 font-bold"
+          >
+            <li>
+              <a
+                href="/Frontend/index.html"
+                class="hover:text-red-800 hover:underline"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Frontend/pages/about.html"
+                class="hover:text-red-800 hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="/Frontend/pages/services.html" class="hover:text-red-800 hover:underline">Services</a>
+            </li>
+            <li>
+              <a href="/Frontend/pages/class.html" class="hover:text-red-800 hover:underline">Class</a>
+            </li>
+            <li>
+              <a href="/Frontend/pages/pages.html" class="hover:text-red-800 hover:underline">Pages</a>
+            </li>
+            <li>
+              <a href="/Frontend/pages/contact.html" class="hover:text-red-800 hover:underline">Contact</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="loginSignUp hidden md:hidden lg:block">
+          <ul
+            class="ulLogSign flex flex-row w-50 justify-center items-center text-[16px] gap-6 font-bold"
+          >
+            <a
+              href="/Frontend/auth/login.html"
+              class="hover:text-red-800 hover:underline border-2 border-gray-300 px-4 py-1.5"
+              >Login</a
+            >
+            <a
+              href="/Frontend/auth/signUp.html"
+              class="hover:text-red-800 hover:underline border-2 border-gray-300 px-4 py-1.5"
+              >Sign Up</a
+            >
+          </ul>
+        </section>
+      </div>
+
+      <!-- Responsive -->
+      <div
+        id="responsive"
+        class="responsive fixed hidden lg:hidden p-5 w-70 md:w-130 h-auto pb-14  bg-gray-300 px-7 md:px-10"
+      >
+        <section class="ulSec flex flex-col w-full h-auto">
+          <ul
+            class="flex flex-col text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 font-bold pt-7 md:pt-7 w-full h-auto transition-all duration-300"
+          >
+            <li class=" hover:text-white p-2 hover:bg-red-600   hover:w-full hover:px-7">
+              <a href="/Frontend/index.html" class="" >Home</a>
+            </li>
+
+            <li class=" hover:text-white p-2 w-full  hover:bg-red-600 hover:px-7">
+              <a href="/Frontend/pages/about.html" class=" ">About</a>
+            </li>
+
+            <li class=" hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
+              <a href="/Frontend/pages/services.html" class="" >Services</a>
+            </li>
+
+            <li class="  hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7  ">
+              <a href="/Frontend/pages/class.html" class="">Class</a>
+            </li>
+            <li class=" hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
+              <a href="/Frontend/pages/pages.html" class="" >Pages</a>
+            </li>
+            <li class="  hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
+              <a href="/Frontend/pages/contact.html"  class="">Contact</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="loginSignUp block md:block lg:hidden w-full font-bold">
+          <ul
+            class="ulLogSign flex flex-col  w-full md:w-full text-[20px] md:text-[23px] gap-2 md:gap-3 mt-9 md:mt-10 transition-all duration-300"
+          >
+            <li class="hover:text-white hover:bg-red-600 p-2 hover:w-full  hover:px-7 "><a href="/Frontend/pages/login.html"  class="">Login</a></li>
+            <li class="hover:text-white hover:bg-red-600 p-2  hover:w-full hover:px-7  "><a href="/Frontend/pages/signUp.html"  class="">Sign Up</a></li>
+          </ul>
+        </section>
+      </div>
+    </header>
+
+    <main id="homeSection ">
+      <div class="homeSectionSon pb-0 bg-black">
+        <section
+          class="relative bg-[url('/Frontend/assets/Images/Img2.jpg')] opacity-100 w-full  h-auto sm:h-auto md:h-auto lg:h-screen bg-cover bg-center bg-no-repeat z-50 pb-15 md:pb-16 lg:pb-15 mt-16"
+        >
+          <div class="absolute inset-0 bg-black/60"></div>
+
+          
+
+          <div
+            class="relative flex flex-col justify-center items-center lg:justify-start lg:items-start px-7 md:px-10 lg:px-10 sm:px-3 md:px-7 lg:px-7 py-3 pt-8 md:pt-16 lg:pt-14 gap-6"
+          >
+            <h5
+              class="text-gray-300 tracking-widest md:text-[22px] lg:text-[16px]"
+            >
+              WELCOME TO GYMHUB
+            </h5>
+            
+            <div
+              class="h1Div flex flex-col w-full justify-center items-center lg:justify-start lg:items-start text-[36px] sm:text-[35px] md:text-8xl lg:text-7xl font-extrabold tracking-wider lg:tracking-widest mb-0 md:mb-6 lg:mb-6 pt-0 md:pt-0 lg:pt-0 mt-9 animate-bounce"
+            >
+              <h1 class="text-red-600">Your Fitness</h1>
+              <h2 class="text-white/90">Your Family</h2>
+            </div>
+
+
+            <div
+            class="relative flex flex-col z-10 w-full h-full justify-start lg:items-start items-center text-center gap-2 md:gap-8 lg:gap-6"
+          >
+            
+            <p
+              class="flex lg:items-start lg:text-left text-white sm:text-[18px] text-[20px] md:text-[35px] lg:text-[25px] lg:pr-48 "
+            >
+              At GymHub, we don't just lift weights- we lift each other. Whether
+              it is your first day or your 500th, you fit in here. Stop waiting
+              and start training
+            </p>
+
+            <div
+              class="flex flex-col lg:flex-row w-full lg:w-100 gap-4 md:gap-6 lg:gap-4 justify-center lg:justify-start text-center mt-5 text-[20px] md:text-4xl lg:text-[17px]"
+            >
+              <a
+                href=""
+                class="bg-red-600 hover:bg-red-800 text-white font-bold py-4 md:py-6 lg:py-4 px-6 md:px-10 lg:px-6 rounded-lg transition"
+                >Claim Guest Pass</a
+              >
+              <a
+                href=""
+                class="bg-white/10 hover:bg-white/30 text-white font-bold py-4 md:py-6 lg:py-4 px-6 md:px-10 lg:px-6 rounded-lg border border-white/30 transition"
+                >See Equipment</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="bg-gray-600 bg-linear-to-br from-black/35 via-gray-600 to-white h-auto w-full transition"
+        >
+          <div
+            class="relative flex flex-col w-full h-auto pb-14 pt-14 px-4 gap-3 border-x-12 border-black/20"
+          >
+            <div class="flex flex-col justify-center items-center text-center">
+              <h2
+                class="text-[18px] md:text-2xl lg:text-[20px] font-bold text-center text-red-800"
+              >
+                WHY CHOOSE US?
+              </h2>
+              <div
+                class="flex flex-row w-70 md:w-100 lg:w-100 text-center justify-center items-center gap-0 md:gap-2 lg:gap-2"
+              >
+                <h6
+                  class="w-8 md:w-15 lg:w-20 h-0.5 md:h-2 lg:h-1.25 bg-white text-white border border-white"
+                ></h6>
+                <h1
+                  class="text-white text-[25px] md:text-[27px] lg:text-[25px] font-awesome font-bold w-100"
+                >
+                  BUILD BEYOND LIMITS
+                </h1>
+                <h6
+                  class="w-10 md:w-15 lg:w-20 h-0.75 md:h-2 lg:h-1.25 bg-red-600 text-white border border-red-600"
+                ></h6>
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row w-full justify-center mt-9">
+              <div class="flex flex-col md:flex-row w-full gap-8">
+                <div
+                  class="flex flex-col justify-center items-center text-center gap-3 p-5 px-4 hover:bg-white/20 rounded-lg"
+                >
+                  <img
+                    src="/Frontend/assets/Images/gymhouse.jpg"
+                    alt=""
+                    class="w-20 h-12.5"
+                  />
+                  <h3
+                    class="text-[25px] md:text-[30px] lg:text-[18px] text-white/70 font-bold"
+                  >
+                    Modern Equipment
+                  </h3>
+                  <p class="text-[20px] md:text-[25px] lg:text-[15px]">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem facere, inventore labore maxime eius ipsum? Nemo
+                    impedit voluptatum doloribus repellendus perspiciatis magni,
+                    delectus dolore velit temporibus distinctio sint.
+                  </p>
+                </div>
+
+                <div
+                  class="flex flex-col justify-center items-center text-center gap-3 p-5 px-4 hover:bg-white/10 rounded-lg"
+                >
+                  <img
+                    src="/Frontend/assets/Images/gymhouse.jpg"
+                    alt=""
+                    class="w-20 h-12.5"
+                  />
+                  <h3
+                    class="text-[25px] md:text-[30px] lg:text-[18px] text-red-900 font-bold"
+                  >
+                    Healthy Nutrition Plan
+                  </h3>
+                  <p class="text-[20px] md:text-[25px] lg:text-[15px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam assumenda sed tempora rerum nesciunt eum harum
+                    distinctio earum vel consequuntur voluptatem, facilis nobis
+                    nam laboriosam iste molestias quaerat?
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col md:flex-row w-full gap-8">
+                <div
+                  class="flex flex-col justify-center items-center text-center gap-3 p-5 px-4 hover:bg-white/10 rounded-lg"
+                >
+                  <img
+                    src="/Frontend/assets/Images/gymhouse.jpg"
+                    alt=""
+                    class="w-20 h-12.5"
+                  />
+                  <h3
+                    class="text-[25px] md:text-[30px] lg:text-[18px] text-white/70 font-bold"
+                  >
+                    Professional Training Plan
+                  </h3>
+                  <p class="text-[20px] md:text-[25px] lg:text-[15px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                    repudiandae laborum! Consequuntur incidunt tempora sunt
+                    culpa officiis, laudantium labore quos architecto ipsum quas
+                    nemo corrupti iste, consequatur quia eligendi.
+                  </p>
+                </div>
+
+                <div
+                  class="flex flex-col justify-center items-center text-center gap-3 p-5 px-4 hover:bg-white/30 rounded-lg"
+                >
+                  <img
+                    src="/Frontend/assets/Images/gymhouse.jpg"
+                    alt=""
+                    class="w-20 h-12.5"
+                  />
+                  <h3
+                    class="text-[20px] md:text-[30px] lg:text-[18px] text-red-600 font-bold"
+                  >
+                    Personalize Service Plan
+                  </h3>
+                  <p class="text-[20px] md:text-[25px] lg:text-[15px]">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita distinctio nam quae adipisci? Id dolores voluptatem
+                    praesentium saepe, quasi dolorum iure reiciendis omnis,
+                    officiis, nisi neque animi quibusdam accusamus tenetur!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="ratingSec bg-gray-900 bg-linear-to-tl from-gray-800 via-white/25 to-black/80 w-full h-auto justify-center text-black border-12 border-x-white/35"
+        >
+          <div
+            class="ratingSecSon flex flex-row lg:flex-row justify-center items-center lg:justify-center w-full pb-14 pt-14 py-8 gap-10 md:gap-36 lg:gap-30 hover:bg-linear-to-br from-gray-500 via-black/40 to-white/60 px-7 md:px-10 lg:px-10"
+          >
+            <div
+              class="ratingDiv1 flex flex-col lg:flex-row justify-around md:justify-around lg:justify-around text-left gap-2 md:gap-20 lg:gap-30"
+            >
+              <div class="members flex flex-col md:gap-3 lg:gap-0">
+                <h1
+                  class="text-[35px] md:text-6xl lg:text-6xl font-extrabold text-white/80"
+                >
+                  5,000+
+                </h1>
+                <p
+                  class="font-bold text-white/40 text-[16px] md:text-[22px] lg:text-[16px]"
+                >
+                  Members
+                </p>
+              </div>
+
+              <div class="classPerWeek flex flex-col md:gap-3 lg:gap-0">
+                <h1
+                  class="text-[35px] md:text-6xl lg:text-6xl font-extrabold text-white/80"
+                >
+                  50+
+                </h1>
+                <p
+                  class="font-bold text-white/40 text-[16px] md:text-[22px] lg:text-[16px]"
+                >
+                  Classes/Week
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="ratingDiv2 flex flex-col lg:flex-row justify-around md:justify-around lg:justify-around text-left gap-0 md:gap-20 lg:gap-30"
+            >
+              <div class="experts flex flex-col md:gap-3 lg:gap-0 text-left">
+                <h1
+                  class="text-[35px] md:text-6xl lg:text-6xl font-extrabold text-white/80"
+                >
+                  15+
+                </h1>
+                <p
+                  class="font-bold text-white/40 text-[16px] md:text-[22px] lg:text-[16px]"
+                >
+                  Expert Trainers
+                </p>
+              </div>
+
+              <div class="access flex flex-col md:gap-3 lg:gap-0 text-left">
+                <h1
+                  class="text-[35px] md:text-6xl lg:text-6xl font-extrabold text-white/80"
+                >
+                  24/7
+                </h1>
+                <p
+                  class="font-bold text-white/40 text-[16px] md:text-[22px] lg:text-[16px]"
+                >
+                  Access
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="programSec bg-black bg-linear-to-r from-black via-gray-500 to-white/30 w-full"
+        >
+          <div
+            class="programSon flex flex-col justify-center items-center w-full h-auto pt-16 md:pt-20 lg:pt-16 pb-16 md:pb-24 lg:pb-50 gap-8 text-white/80 px-7 md:px-10 lg:px-10 py-4 lg:pr-10"
+          >
+            <div
+              class="programSonSubDiv1 flex flex-col justify-center items-center gap-5 pb-6 md:pb-10"
+            >
+              <h4
+                class="text-[20px] md:text-3xl lg:text-[18px] bg-gray-900 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 border border-white/50"
+              >
+                Programs
+              </h4>
+              <h2
+                class="text-[25px] md:text-4xl lg:text-[25px] font-bold text-red-800 text-center"
+              >
+                Training Programs For Every Goal
+              </h2>
+              <p
+                class="text-center tracking-70 sm:text-[18px] text-[21px] md:text-[28px] lg:text-[21px]"
+              >
+                Whether you want to build muscles, lose weight or improve
+                flexibility, we have a program designed for you
+              </p>
+            </div>
+
+            <div
+              class="programSonSubDiv2 flex flex-col pt-7 gap-10 md:gap-14 lg:gap-4"
+            >
+              <div class="flex flex-col lg:flex-row gap-10 md:gap-14 lg:gap-3">
+                <div
+                  class="hiit flex flex-col gap-2 hover:scale-90 transition-transform duration-300"
+                >
+                  <h4
+                    class="text-[18px] md:text-[25px] lg:text-[18px] font-extrabold bg-red-600 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 w-18 md:w-25 lg:w-18"
+                  >
+                    HIIT
+                  </h4>
+                  <img
+                    src="/Frontend/assets/Images/img8.jpg"
+                    alt=""
+                    class="w-full h-[42vh] md:h-[50vh] lg:h-[42vh] hover:scale-90 transition-transform duration-300"
+                  />
+                  <p class="text-[20px] md:text-[25px] lg:text-[18px]">
+                    High-intensity interval trainings for maximum calorie burn.
+                    Short, intense sessions that deliver real results
+                  </p>
+                </div>
+
+                <div
+                  class="yogaFlexibility flex flex-col gap-2 hover:scale-90 transition-transform duration-300"
+                >
+                  <h4
+                    class="text-[18px] md:text-[25px] lg:text-[18px] font-extrabold bg-red-600 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 w-47 md:w-66 lg:w-47"
+                  >
+                    Yoga & Flexibility
+                  </h4>
+                  <img
+                    src="/Frontend/assets/Images/img15.jpg"
+                    alt=""
+                    class="w-full h-[42vh] md:h-[50vh] lg:h-[42vh] hover:scale-90 transition-transform duration-300"
+                  />
+                  <p class="text-[20px] md:text-[25px] lg:text-[18px]">
+                    Find mind body balance with guided yoga sessions. Improve
+                    flexibility, reduce stress and aid recovery
+                  </p>
+                </div>
+
+                <div
+                  class="Strength flex flex-col gap-2 hover:scale-90 transition-transform duration-300"
+                >
+                  <h4
+                    class="text-[18px] md:text-[25px] lg:text-[18px] font-extrabold bg-red-600 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 w-47 md:w-67 lg:w-47"
+                  >
+                    Strength Training
+                  </h4>
+                  <img
+                    src="/Frontend/assets/Images/WEIGHTLIGT.jpg"
+                    alt=""
+                    class="w-full h-[42vh] md:h-[50vh] lg:h-[42vh] hover:scale-90 transition-transform duration-300"
+                  />
+                  <p class="text-[20px] md:text-[25px] lg:text-[18px]">
+                    Build muscles and increase power with structured progressive
+                    overload program and expert guidances
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="programSonSubDiv3 flex flex-col lg:flex-row gap-10 md:gap-14 lg:gap-3"
+              >
+                <div
+                  class="crossFit flex flex-col gap-2 hover:scale-90 transition-transform duration-300"
+                >
+                  <h4
+                    class="text-[18px] md:text-[25px] lg:text-[18px] font-extrabold bg-red-600 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 w-27 md:w-37 lg:w-27"
+                  >
+                    CrossFit
+                  </h4>
+                  <img
+                    src="/Frontend/assets/Images/image.png"
+                    alt=""
+                    class="w-full h-[42vh] md:h-[50vh] lg:h-[42vh] hover:scale-90 transition-transform duration-300"
+                  />
+                  <p class="text-[20px] md:text-[25px] lg:text-[18px]">
+                    Functional fitness with high intensity. Challenge yourself
+                    with varied workouts that build all-round athleticism
+                  </p>
+                </div>
+
+                <div
+                  class="boxing flex flex-col gap-2 hover:scale-90 transition-transform duration-300"
+                >
+                  <h4
+                    class="text-[18px] md:text-[25px] lg:text-[18px] font-extrabold bg-red-600 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 w-44 md:w-61 lg:w-44"
+                  >
+                    Boxing & MMA
+                  </h4>
+                  <img
+                    src="/Frontend/assets/Images/boxingMMA.webp"
+                    alt=""
+                    class="w-full h-[42vh] md:h-[50vh] lg:h-[42vh] hover:scale-90 transition-transform duration-300"
+                  />
+                  <p class="text-[20px] md:text-[25px] lg:text-[18px]">
+                    Learn striking fundamentals and self-defense technigues.
+                    Build confidence while getting an incredible workout.
+                  </p>
+                </div>
+
+                <div
+                  class="personalTraining flex flex-col gap-2 hover:scale-90 transition-transform duration-300"
+                >
+                  <h4
+                    class="text-[18px] md:text-[25px] lg:text-[18px] font-extrabold bg-red-600 px-2 md:px-4 lg:px-2 py-1 md:py-2 lg:py-1 w-48 md:w-67 lg:w-48"
+                  >
+                    Personal Training
+                  </h4>
+                  <img
+                    src="/Frontend/assets/Images/img10.jpg"
+                    alt=""
+                    class="w-full h-[42vh] md:h-[50vh] lg:h-[42vh] hover:scale-90 transition-transform duration-300"
+                  />
+                  <p class="text-[20px] md:text-[25px] lg:text-[18px]">
+                    One-on-one cutomized coaching tailored to your goals. Get a
+                    workout plan and nutrition guidance built for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footerMain py-4 bg-gray-900 pt-40">
+      <div class="footerSonDiv flex flex-col w-full h-auto">
+        <section class="topSec flex justify-center items-center px-7 md:px-10 lg:px-10 pb-5">
+          <h3
+            class="text-[20px] md:text-3xl lg:text-[20px] bg-linear-to-r from-white to-white/80 bg-clip-text text-transparent opacity-100 md:px-45 lg:px-120 text-center font-bold pb-6"
+          >
+            Here at GymHub, fitness and wellness is our priority. Stay strong 💪
+            and Healthy
+          </h3>
+        </section>
+
+        <section
+          class="line w-full h-[2px] md:h-[1px] lg:h-[1px] bg-white/20"
+        ></section>
+
+        <section
+          class="bottomSec flex flex-col w-full lg:flex-row justify-start lg:justify-between px-7 md:px-10 lg:px-10 py-14 text-white gap-16"
+        >
+          <div
+            class="bottomDiv1 flex flex-col justify-start items-start lg:w-[35%] gap-5"
+          >
+            <h2
+              class="logoDiv flex flex-row gap-0 text-[20px] md:text-[35px] lg:text-[15px]"
+            >
+              <a
+                href=""
+                class="text-2xl md:text-5xl lg:text-2xl text-red-600 opacity-70 font-bold"
+                >//</a
+              >
+              <a href="" class="text-2xl font-bold"
+                ><span
+                  class="text-3xl md:text-5xl lg:text-3xl text-red-600 font-bold font-sans"
+                  >G</span
+                >ym<span
+                  class="text-3xl md:text-5xl lg:text-3xl text-red-600 opacity-80 font-bold"
+                  >h</span
+                >ub</a
+              >
+            </h2>
+
+            <p class="text-white/80 text-[20px] md:text-[25px] lg:text-[16px]">
+              Whether your question is about our membership plans, upcoming events, or simply need some fitness advice, don't hesitate to contact us.
+              Our dedicated team is here to assist you on fitness journey, providing upport, motivation and guidance on every step of the way. 
+            </p>
+
+            <div
+              class="socials flex flex-row gap-4 h-auto justify-start items-center"
+            >
+              <a href=""
+                ><img
+                  src="/Frontend/assets/Images/facebooklogo2-removebg-preview.png"
+                  alt=""
+                  class="w-10 h-8 md:w-18 md:h-14 lg:w-10 lg:h-8"
+              /></a>
+              <a href=""
+                ><img
+                  src="/Frontend/assets/Images/Whatsapp_logo-removebg-preview.png"
+                  alt=""
+                  class="w-10 h-10 md:w-20 md:h-20 lg:w-10 lg:h-10"
+              /></a>
+              <a href=""
+                ><img
+                  src="/Frontend/assets/Images/xlogo-removebg-preview.png"
+                  alt=""
+                  class="w-8 h-8 md:w-12 md:h-12 lg:w-8 lg:h-8"
+              /></a>
+              <a href=""
+                ><img
+                  src="/Frontend/assets/Images/ig_logo-removebg-preview.png"
+                  alt=""
+                  class="w-10 h-10 md:w-18 md:h-18 lg:w-10 lg:h-10"
+              /></a>
+              <a href=""
+                ><img
+                  src="/Frontend/assets/Images/linkedI_logo-removebg-preview.png"
+                  alt=""
+                  class="w-8 h-8 md:w-14 md:h-14 lg:w-8 lg:h-8"
+              /></a>
+            </div>
+          </div>
+
+          <div
+            class="bottomDiv2 flex flex-col justify-evenly lg:w-[70%] lg:flex-row lg:pt-14 gap-14"
+          >
+            <div
+              class="classDiv flex flex-col gap-4 text-[20px] md:text-[25px] lg:text-[16px]"
+            >
+              <h3 class="text-[25px] md:text-4xl lg:text-[18px] font-bold">
+                Our Classes
+              </h3>
+
+              <ul class="ul flex flex-col gap-1 text-white/80">
+                <li><a href="" class="hover:text-red-600">Fitness</a></li>
+                <li><a href="" class="hover:text-red-600">Aerobics</a></li>
+                <li><a href="" class="hover:text-red-600">Yoga </a></li>
+                <li><a href="" class="hover:text-red-600">Lean Machines</a></li>
+                <li>
+                  <a href="" class="hover:text-red-600">Full-Body Strength</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="quickLinksDiv flex flex-col gap-4 text-[20px] md:text-[25px] lg:text-[16px]"
+            >
+              <h3 class="text-[25px] md:text-4xl lg:text-[18px] font-bold">
+                Quick Links
+              </h3>
+
+              <ul class="ul flex flex-col gap-1 text-white/80">
+                <li><a href="" class="hover:text-red-600">Home</a></li>
+                <li><a href="" class="hover:text-red-600">Prices</a></li>
+                <li><a href="" class="hover:text-red-600">Programs</a></li>
+                <li><a href="" class="hover:text-red-600">Testimonials</a></li>
+                <li><a href="" class="hover:text-red-600">Team</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="locationDiv flex flex-col gap-4 text-[20px] md:text-[25px] lg:text-[16px]"
+            >
+              <h3 class="text-[25px] md:text-4xl lg:text-[18px] font-bold">
+                Gym Location
+              </h3>
+
+              <ul class="ul flex flex-col gap-1 text-white/80">
+                <li>
+                  <a
+                    href="www.googlemap.com/ifite-awka-landmass"
+                    class="hover:text-red-600"
+                    >#18 Kandi Okeke Awka south, Anambra State, Nigeria</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="hover:text-red-600">gymhubawka@gmail.com</a>
+                </li>
+                <li><a href="" class="hover:text-red-600">08135555321</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="line w-full h-[2px] md:h-[2px] lg:h-[1px] bg-white/20"
+        ></section>
+
+        <section
+          class="copyright flex justify-center lg: text-white px-7 md:px-10 lg:px-10 text-[16px]"
+        >
+          <p class="text-[20px] md:text-[25px] lg:text-[16px]">
+            &copy; 2026 GymHub Fitness and Wellness Center.
+            <span class="text-red-600">All rights reserved.</span>
+          </p>
+        </section>
+      </div>
+    </footer>
+    
+    <script src="/Frontend/assets/js/index.js"></script>
+  </body>
+</html>

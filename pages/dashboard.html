@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="/Frontend/assets/css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="https://googleapis.com" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="bg-black w-full text-white/70 text-[18px] sm:text-[20px] md:text-[27px] lg:text-[16px] font-sans h-[100vh] overflow-x-hidden select-none "
+  >
+    <div class="container flex flex-row w-full h-auto relative z-[100%]">
+      <aside
+        class="flex flex-col w-[50vw] md:w-[50vw] lg:w-[15vw] h-auto md:h-[100vh] gap-3 bg-gray-500 text-black sticky top-0 pb-6 hidden lg:block"
+      >
+        <div
+          class="top flex flex-row w-full justify-between items-center bg-white/10"
+        >
+          <div
+            class="logoDiv flex flex-row gap-0 justify-center items-center px-7 md:px-10 lg:px-10"
+          >
+            <a
+              href=""
+              class="text-3xl md:text-4xl lg:text-3xl text-red-800 opacity-35 font-bold"
+              >II</a
+            >
+            <a href="" class="text-2xl md:text-[30px] lg:text-[20px] font-bold"
+              ><span
+                class="text-3xl md:text-4xl lg:text-3xl text-red-600 font-bold font-sans"
+                >G</span
+              >ym<span
+                class="text-3xl md:text-4xl lg:text-3xl text-red-600 opacity-80 font-bold"
+                >h</span
+              >ub</a
+            >
+          </div>
+          <div class="close lg:hidden" id="close-btn">
+            <span class="material-symbols-outlined">close</span>
+            <!-- <span class="material-symbols-outlined">menu</span> -->
+          </div>
+        </div>
+
+        <div class="imgDiv flex flex-col justify-center items-center">
+          <img
+            src="/Frontend/assets/Images/jane.jpg"
+            alt=""
+            class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] rounded-full"
+          />
+          <h4
+            class="text-black/60 font-semibold text-[16px] md:text-[28px] lg:text-[13px]"
+          >
+            Steve Harvers
+          </h4>
+        </div>
+
+        <div
+          class="sidebar flex flex-col justify-between w-full px-7 md:px-10 lg:px-10 h-[86vh] relative pt-4 pb-2"
+        >
+          <div class="flex flex-col gap-4 md:gap-2 lg:gap-2">
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] md:h-[8vh] lg:h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">dashboard</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Dashboard
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">payments</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Payments
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">settings</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Settings
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">groups_2</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Trainers
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold"
+                >account_circle</span
+              >
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Profile
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">report</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Report
+              </h3>
+            </a>
+          </div>
+
+          <div class="logout">
+            <a
+              href=""
+              class="flex flex-col gap-1 md:gap-2 lg:gap-1 items-center w-full h-[7vh] transition-all duration-300 ease-in"
+            >
+              <span class="material-symbols-outlined font-bold">logout</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Logout
+              </h3>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main class=" w-full relative ">
+        <div
+          class="titleSec flex flex-col w-full  h-auto px-5 md:px-10 lg:px-8 pt-3 gap-3"
+        >
+          <h2 class="font-bold text-[22px] md:text-[30px] lg:text-[20px] text-white/85">
+            Dashboard
+          </h2>
+
+          <section class="sec1 grid grid-cols-1 md:grid md:grid-cols-2  lg:grid-cols-6 w-full  lg:h-16 text-[18px] md:text-[25px] lg:text-[18px] py-2 gap-6  lg:gap-3 lg:bg-white/95 rounded-2xl lg:px-4 text-black/70"
+          >
+            <div class="flex flex-row gap-2 items-center w-full h-30 lg:h-auto text-[22px] md:text-[25px] lg:text-[16px] border-r-2 border-gray-300 lg:bg-none bg-white/95 px-4 py-2  lg:px-2 lg:py-0 rounded lg:rounded-none">
+              <span class="material-symbols-outlined flex items-center justify-center  text-white w-20 h-20 px-3 lg:w-10 lg:h-9 lg:px-2  bg-blue-400 border-2 border-white/60 rounded pt-1">groups_2</span>
+              <div class="flex flex-col w-full whitespace-nowrap">
+                <p>Total Members</p>
+                <h5 class="font-semibold">986</h5>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-2 items-center w-full h-30 lg:h-auto text-[22px] md:text-[25px] lg:text-[16px] border-r-2 border-gray-300 lg:bg-none bg-white/95 px-4 py-2  lg:px-2 lg:py-0 rounded lg:rounded-none">
+              <span class="material-symbols-outlined flex items-center justify-center  text-white w-20 h-20 px-3 lg:w-10 lg:h-9 lg:px-2  bg-purple-500 border-2 border-white/60 rounded pt-1">person</span>
+              <div class="flex flex-col w-full whitespace-nowrap">
+                <p>Trainers</p>
+                <h5 class="font-semibold">105</h5>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-2 items-center w-full h-30 lg:h-auto text-[22px] md:text-[25px] lg:text-[16px] border-r-2 border-gray-300 lg:bg-none bg-white/95 px-4 py-2  lg:px-2 lg:py-0 rounded lg:rounded-none">
+              <span class="material-symbols-outlined flex items-center justify-center  text-white w-20 h-20 px-3 lg:w-10 lg:h-9 lg:px-2  bg-orange-400 border-2 border-white/60 rounded pt-1">groups_2</span>
+              <div class="flex flex-col w-full whitespace-nowrap">
+                <p>Active Members</p>
+                <h5 class="font-semibold">911</h5>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-2 items-center w-full h-30 lg:h-auto text-[22px] md:text-[25px] lg:text-[16px] border-r-2 border-gray-300 lg:bg-none bg-white/95 px-4 py-2  lg:px-2 lg:py-0 rounded lg:rounded-none">
+              <span class="material-symbols-outlined flex items-center justify-center  text-white w-20 h-20 px-3 lg:w-10 lg:h-9 lg:px-2  bg-green-600 border-2 border-white/60 rounded pt-1">groups_2</span>
+              <div class="flex flex-col w-full whitespace-nowrap">
+                <p>With Trainers</p>
+                <h5 class="font-semibold">926</h5>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-2 items-center w-full h-30 lg:h-auto text-[22px] md:text-[25px] lg:text-[16px] border-r-2 border-gray-300 lg:bg-none bg-white/95 px-4 py-2  lg:px-2 lg:py-0 rounded lg:rounded-none">
+              <span class="material-symbols-outlined flex items-center justify-center  text-white w-20 h-20 px-3 lg:w-10 lg:h-9 lg:px-2  bg-red-600 border-2 border-white/60 rounded pt-1">groups_2</span>
+              <div class="flex flex-col w-full whitespace-nowrap">
+                <p>Without Trainers</p>
+                <h5 class="font-semibold">60</h5>
+              </div>
+            </div>
+            <div class="flex flex-row gap-2 items-center w-full h-30 lg:h-auto text-[22px] md:text-[25px] lg:text-[16px] border-r-2 border-gray-300 lg:bg-none bg-white/95 px-4 py-2  lg:px-2 lg:py-0 rounded lg:rounded-none">
+              <span class="material-symbols-outlined flex items-center justify-center  text-white w-20 h-20 px-3 lg:w-10 lg:h-9 lg:px-2  bg-teal-800 border-2 border-white/60 rounded pt-1">currency_exchange</span>
+              <div class="flex flex-col w-full whitespace-nowrap">
+                <p>Revenue</p>
+                <h5 class="font-semibold">$31,250</h5>
+              </div>
+            </div>
+          </section>
+
+          <section>
+
+          </section>
+          <section></section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

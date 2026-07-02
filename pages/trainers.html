@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainers Page</title>
+
+    <link rel="stylesheet" href="/Frontend/assets/css/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="https://googleapis.com" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body
+    class="bg-black w-full text-white/70 text-[18px] sm:text-[20px] md:text-[27px] lg:text-[16px] font-sans h-[100vh] overflow-x-hidden select-none"
+  >
+    <div
+      class="trainerContainer flex lg:flex lg:flex-row w-full h-auto relative z-[100%]"
+    >
+      <aside
+        class="flex flex-col w-[50vw] md:w-[50vw] lg:w-[15vw] h-auto md:h-[100vh] gap-3 bg-gray-500 text-black sticky top-0 pb-6 hidden lg:block"
+      >
+        <div
+          class="top flex flex-row w-full justify-between items-center bg-white/10"
+        >
+          <div
+            class="logoDiv flex flex-row gap-0 justify-center items-center px-7 md:px-10 lg:px-10"
+          >
+            <a
+              href=""
+              class="text-3xl md:text-4xl lg:text-3xl text-red-800 opacity-35 font-bold"
+              >II</a
+            >
+            <a href="" class="text-2xl md:text-[30px] lg:text-[20px] font-bold"
+              ><span
+                class="text-3xl md:text-4xl lg:text-3xl text-red-600 font-bold font-sans"
+                >G</span
+              >ym<span
+                class="text-3xl md:text-4xl lg:text-3xl text-red-600 opacity-80 font-bold"
+                >h</span
+              >ub</a
+            >
+          </div>
+          <div class="close lg:hidden" id="close-btn">
+            <span class="material-symbols-outlined">close</span>
+            <!-- <span class="material-symbols-outlined">menu</span> -->
+          </div>
+        </div>
+
+        <div class="imgDiv flex flex-col justify-center items-center">
+          <img
+            src="/Frontend/assets/Images/jane.jpg"
+            alt=""
+            class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] rounded-full"
+          />
+          <h4
+            class="text-black/60 font-semibold text-[16px] md:text-[28px] lg:text-[13px]"
+          >
+            Steve Harvers
+          </h4>
+        </div>
+
+        <div
+          class="sidebar flex flex-col justify-between w-full px-7 md:px-10 lg:px-10 h-[86vh] relative pt-4 pb-2"
+        >
+          <div class="flex flex-col gap-4 md:gap-2 lg:gap-2">
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] md:h-[8vh] lg:h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">dashboard</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Dashboard
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">payments</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Payments
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">settings</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Settings
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">groups_2</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Trainers
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold"
+                >account_circle</span
+              >
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Profile
+              </h3>
+            </a>
+
+            <a
+              href=""
+              class="flex flex-col items-center relative w-full h-[7vh] transition-all duration-300"
+            >
+              <span class="material-symbols-outlined font-bold">report</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Report
+              </h3>
+            </a>
+          </div>
+
+          <div class="logout">
+            <a
+              href=""
+              class="flex flex-col gap-1 md:gap-2 lg:gap-1 items-center w-full h-[7vh] transition-all duration-300 ease-in"
+            >
+              <span class="material-symbols-outlined font-bold">logout</span>
+              <h3
+                class="text-[16px] md:text-[25px] lg:text-[13px] font-semibold"
+              >
+                Logout
+              </h3>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main class="contentMain w-full relative h-auto lg:h-screen">
+        <div class="contentSonDiv flex flex-col w-full  h-auto lg:h-screen  pt-3 py-2 gap-3">
+            <section class="trainerTextSec px-5 md:px-10 lg:px-10">
+                <h2 class="font-bold text-[22px] md:text-[30px] lg:text-[20px] text-white/85">Trainers</h2>
+            </section>
+
+            <section class="profileAndChatSec flex flex-col lg:flex-row w-full h-auto lg:h-screen gap-6 md:gap-10 lg:gap-4  md:px-10 lg:px-8">
+                <div class="trainerProfileDiv flex flex-col w-full h-auto lg:w-[30%]  gap-6 md:gap-8 lg:gap-4 bg-white/10  p-5 md:p-7 lg:p-4 rounded-2xl">
+                    <div class="trainerProfileDivTop flex flex-row w-full justify-between items-center pb-4 md:pb-6 lg:pb-2">
+                        <h5 class="font-semibold text-[22px] md:text-[30px] lg:text-[20px]">Profile</h5>
+                        <div class="flex flex-col gap-0.5">
+                            <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px] bg-white/70 rounded-full"></div>
+                            <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px]  bg-white/70 rounded-full"></div>
+                            <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px] bg-white/70 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="imgDiv relative flex flex-col justify-center items-center w-full text-center gap-0.5"
+                    >
+                        <img
+                        src="/Frontend/assets/Images/Peters.jpg"
+                        alt=""
+                        class="w-[120px] h-[120px] lg:w-[90px] lg:h-[90px] rounded-full"
+                        />
+                        <div class="lg:leading-4 ">
+                            <h5 class="">Peter Hughes</h5>
+                            <p class="text-[18px] md:text-[25px] lg:text-[13px]  text-white/50">Fitness/Wellness Coach</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="xperienceMemberRatingDiv flex flex-row justify-around bg-white/20 p-3 md:p-3 lg:p-1 w-full rounded-2xl px-3"
+                    >
+                        <div
+                        class="flex flex-col items-center justify-center border-r-2 border-white/10 w-full"
+                        >
+                            <h5 class="font-semibold">5yrs</h5>
+                            <p class="text-[18px] md:text-[25px] lg:text-[12px]">Experience</p>
+                        </div>
+
+                        <div
+                        class="flex flex-col items-center justify-center border-r-2 border-white/10 w-full"
+                        >
+                            <h5 class="font-semibold">120+</h5>
+                            <p class="text-[18px] md:text-[25px] lg:text-[12px]">Memebers</p>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full">
+                            <h5 class="font-semibold">5.5/s</h5>
+                            <p class="text-[18px] md:text-[25px] lg:text-[12px]">Rating</p>
+                        </div>
+                    </div>
+
+                    <div class="trainerContactDiv flex flex-col mt-3 w-full">
+                        <div class="trainerProfileDivTop flex flex-row w-full justify-between items-center pb-4 md:pb-6 lg:pb-2">
+                            <h5 class="font-semibold text-[22px] md:text-[30px] lg:text-[20px]">Contact</h5>
+                            <div class="flex flex-col gap-0.5">
+                                <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px] bg-white/70 rounded-full"></div>
+                                <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px]  bg-white/70 rounded-full"></div>
+                                <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px] bg-white/70 rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div class="emailPhoneAddressDiv flex flex-col w-full h-auto gap-2">
+                            <div class="email flex flex-row w-full gap-1 items-center">
+                                <span class="material-symbols-outlined p-2 bg-white/20 rounded-2xl">cards</span>
+                                <div>
+                                    <p class="text-white/15 text-[18px] md:text-[25px] lg:text-[12px]">Email</p>
+                                    <a href="" class="text-[18px] md:text-[25px] lg:text-[12px]">peterhughesfit1@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="phone flex flex-row w-full gap-1 items-center">
+                                <span class="material-symbols-outlined p-2 bg-white/20 rounded-2xl">cards</span>
+                                <div>
+                                    <p class="text-white/15 text-[18px] md:text-[25px] lg:text-[12px]">Phone</p>
+                                    <p class="text-[18px] md:text-[25px] lg:text-[12px]">+2347017073085</p>
+                                </div>
+                            </div>
+
+                            <div class="address flex flex-row w-full gap-1 items-center">
+                                <span class="material-symbols-outlined p-2 bg-white/20 rounded-2xl">home</span>
+                                <div>
+                                    <p class="text-white/15 text-[18px] md:text-[25px] lg:text-[12px]">Address</p>
+                                    <p class="text-[18px] md:text-[25px] lg:text-[12px]">#125 Hospital Road Port Harcourt Township </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificateDiv flex flex-col mt-3 w-full gap-2">
+                        <div class="trainerProfileDivTop flex flex-row w-full justify-between items-center pb-4 md:pb-6 lg:pb-2">
+                            <h5 class="font-semibold text-[22px] md:text-[30px] lg:text-[20px]">Certificate</h5>
+                            <div class="flex flex-col gap-0.5">
+                                <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px] bg-white/70 rounded-full"></div>
+                                <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px]  bg-white/70 rounded-full"></div>
+                                <div class="dot w-[5px] h-[5px] md:w-[8px] md:h-[8px] lg:w-[5px] lg:h-[5px] bg-white/70 rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div class="address flex flex-row w-full gap-1 items-center">
+                            <span class="material-symbols-outlined p-2 bg-white/20 rounded-2xl">home</span>
+                            <div>
+                                <p class="text-[18px] md:text-[25px] lg:text-[12px]">#125 Hospital Road Port Harcourt Township </p>
+                                <p class="text-white/15 text-[18px] md:text-[25px] lg:text-[12px]">2024</p>
+                            </div>
+                        </div>
+
+                        <div class="address flex flex-row w-full gap-1 items-center">
+                            <span class="material-symbols-outlined p-2 bg-white/20 rounded-2xl">home</span>
+                            <div>
+                                <p class="text-[18px] md:text-[25px] lg:text-[12px]">#125 Hospital Road Port Harcourt Township </p>
+                                <p class="text-white/15 text-[18px] md:text-[25px] lg:text-[12px]">2021</p>
+                            </div>
+                        </div>
+
+                        <div class="address flex flex-row w-full gap-1 items-center">
+                            <span class="material-symbols-outlined p-2 bg-white/20 rounded-2xl">home</span>
+                            <div>
+                                <p class="text-[18px] md:text-[25px] lg:text-[12px]">#125 Hospital Road Port Harcourt Township </p>
+                                <p class="text-white/15 text-[18px] md:text-[25px] lg:text-[12px]">2018</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="chatDiv flex flex-col lg:justify-start  w-full h-auto lg:h-screen lg:w-[70%]  gap-6 md:gap-8 lg:gap-4  p-5 md:p-7 lg:p-4 rounded-2xl">
+                    <div class="flex justify-center items-center w-full h-auto lg:h-[45vh] bg-white/10 rounded-2xl">
+                        <p>CHAT TO BE INSERTED HERE</p>
+                    </div>
+                    <div class="calendarAndScheduleDiv flex flex-col lg:flex-row w-full h-auto lg:h-[45vh] gap-6 md:gap-8 lg:gap-4">
+                        <div class="calendarDiv flex justify-center items-center w-full lg:w-[40%] bg-white/10 rounded-2xl">
+                            <h1>INSERT CALENDER</h1>
+                        </div>
+
+                        <div class="scheduleDiv flex flex-col w-full lg:w-[60%] bg-black gap-4 md:gap-6 lg:gap-2 mt-4 lg:mt-0">
+                          <div class="flex flex-row w-full justify-between items-center p-2 md:p-3 py-5 md:py-7 lg:py-3 lg:p-1 bg-black">
+                            <h2 class="font-semibold ">Appointments</h2>
+                            <a
+                              href=""
+                              class="flex items-center justify-center py-1 px-1 lg:py-0 lg:px-0.5 w-10 h-10 md:w-14 md:h-14 lg:w-10 lg:h-10 bg-red-600 rounded-2xl text-white text-center pb-2 md:pb-2 lg:pb-1"
+                              >+</a
+                            >
+                          </div>
+
+                          <div class="appointment1Div flex flex-row justify-between items-center w-full bg-white/10 p-5 md:p-7 lg:p-2 lg:px-5 rounded-2xl border-[1px] border-white/20">
+                            <div class="bookedDateAndTrainingDiv flex flex-row items-center gap-4 md:gap-5 lg:gap-2">
+                              <div class="bookedDate flex flex-col items-center justify-center py-1 px-1 lg:py-0 lg:px-0.5 w-16 h-16 md:w-24 md:h-24 lg:w-14 lg:h-14 bg-black rounded-2xl text-white/45 text-center pb-2 md:pb-2 lg:pb-1 border-[1px] border-white/15">
+                                <h4>Aug</h4>
+                                <p class="font-semibold">10</p>
+                              </div>
+                              <div>
+                                <h4>Training</h4>
+                                <p class="text-white/15">4pm - 6pm</p>
+                              </div>
+                            </div>
+                            <a href=""><span class="material-symbols-outlined text-white/15 ">arrow_forward</span></a>
+                          </div>
+
+                          <div class="appointment2Div flex flex-row justify-between items-center w-full bg-white/10 p-5 md:p-7 lg:p-2 lg:px-5 rounded-2xl border-[1px] border-white/20">
+                            <div class="bookedDateAndNutritionDiv flex flex-row items-center gap-4 md:gap-5 lg:gap-2">
+                              <div class="bookedDate flex flex-col items-center justify-center py-1 px-1 lg:py-0 lg:px-0.5 w-16 h-16 md:w-24 md:h-24 lg:w-14 lg:h-14 bg-black rounded-2xl text-white/45 text-center pb-2 md:pb-2 lg:pb-1 border-[1px] border-white/15">
+                                <h4>Aug</h4>
+                                <p class="font-semibold">21</p>
+                              </div>
+                              <div>
+                                <h4>Nutrition</h4>
+                                <p class="text-white/15">2pm - 3pm</p>
+                              </div>
+                            </div>
+                            <a href=""><span class="material-symbols-outlined text-white/15 ">arrow_forward</span></a>
+                          </div>
+
+                          <div class="appointment3Div flex flex-row justify-between items-center w-full bg-white/10 p-5 md:p-7 lg:p-2 lg:px-5 rounded-2xl border-[1px] border-white/20">
+                            <div class="bookedDateAndDietDiv flex flex-row items-center gap-4 md:gap-5 lg:gap-2">
+                              <div class="bookedDate flex flex-col items-center justify-center py-1 px-1 lg:py-0 lg:px-0.5 w-16 h-16 md:w-24 md:h-24 lg:w-14 lg:h-14 bg-black rounded-2xl text-white/45 text-center pb-2 md:pb-2 lg:pb-1 border-[1px] border-white/15">
+                                <h4>Sept</h4>
+                                <p class="font-semibold">1</p>
+                              </div>
+                              <div>
+                                <h4>Diet & Health</h4>
+                                <p class="text-white/15">4pm - 5pm</p>
+                              </div>
+                            </div>
+                            <a href=""><span class="material-symbols-outlined text-white/15 ">arrow_forward</span></a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
