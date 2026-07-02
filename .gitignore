@@ -1,9 +1,4 @@
-node_modules
-dist
+node_modules/
+dist/
+.vscode/
 .env
-.vercel
-build
-.env.local
-.DS_Store
-Frontend/node_modules
-Frontend/dist
