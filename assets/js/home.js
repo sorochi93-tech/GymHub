@@ -1,7 +1,7 @@
 
-const btn = document.getElementById9('menu-btn');
-const responsive.addEventListener('click', () => {
+const toggleButton = document.getElementById("toggle-button");
+const dropdown = document.getElementById("dropdown");
 
-    // 1. Toggle the mobile menu visibility
-    btn.classList.toggle('open');
+toggleButton.addEventListener("click", () => {
+    dropdown.classList.toggle("hidden");
 });
