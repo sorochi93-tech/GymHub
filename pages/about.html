@@ -25,6 +25,132 @@
   </head>
 
   <body class="bg-black/95">
+    <header class="z-100 fixed top-0 w-full justify-between ">
+      <div
+        class="navbar flex flex-row justify-between bg-gray-200 border-b-2 border-gray-300 items-center w-full px-7 md:px-10 lg:px-10 sm:px-3 py-3 h-20 md:h-24 lg:h-16"
+      >
+        <section
+          class="logoSec flex flex-row items-center justify-between w-full lg:w-40"
+        >
+
+          <div
+            class="logoDiv flex flex-row gap-0 items-center "
+          >
+            <a
+              href=""
+              class="text-4xl md:text-6xl lg:text-4xl text-red-800 opacity-35 font-bold"
+              >II</a
+            >
+            <a href="" class=" text-3xl md:text-[40px] lg:text-[30px] font-bold"
+              ><span
+                class="text-4xl md:text-6xl lg:text-4xl text-red-600 font-bold font-sans"
+                >G</span
+              >ym<span
+                class="text-4xl md:text-6xl lg:text-4xl text-red-600 opacity-80 font-bold"
+                >h</span
+              >ub</a
+            >
+          </div>
+
+          <button id="toggle-button" class=" flex flex-col items-start justify-between lg:hidden gap-1 md:gap-2 mt-1 mb-1 focus:outline-none hover:bg-gray-100 focus:bg-gray-300 p-3 md:p-5">
+            <!-- top line -->
+            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300"></span>
+            <!-- middle line -->
+            <span class=" w-5 md:w-12  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300 "></span>
+            <!-- bottom line -->
+            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300  "></span>
+          </button>
+        </section>
+
+        <section class="ulSec hidden md-hidden lg:block">
+          <ul
+            class="flex flex-row w-full justify-center items-center text-[16px] gap-4 font-bold"
+          >
+            <li>
+              <a
+                href="../home.html"
+                class="hover:text-red-800"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="hover:text-red-800"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="./services.html" class="hover:text-red-800">Services</a>
+            </li>
+            <li>
+              <a href="./class.html" class="hover:text-red-800">Class</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="hover:text-red-800">Contact</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="loginSignUp hidden md:hidden lg:block">
+          <ul
+            class="ulLogSign flex flex-row w-50 justify-center items-center text-[16px] gap-6 font-bold"
+          >
+            <a
+              href="./auth/login.html"
+              class="hover:text-red-800 hover:underline border-2 border-gray-300 px-4 py-1.5"
+              >Login</a
+            >
+            <a
+              href="./auth/signUp.html"
+              class="hover:text-red-800 hover:underline border-2 border-gray-300 px-4 py-1.5"
+              >Sign Up</a
+            >
+          </ul>
+        </section>
+      </div>
+
+      <!-- Responsive -->
+      <div
+        id="dropdown"
+        class="hidden lg:hidden p-5 w-70 md:w-130 h-auto pb-14  bg-gray-200 px-7 md:px-10"
+      >
+        <section class="ulSec flex flex-col w-full h-auto">
+          <ul
+            class="flex flex-col text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 font-bold pt-7 md:pt-7 w-full h-auto transition-all duration-300"
+          >
+            <li class=" hover:text-white p-2 hover:bg-red-600   hover:w-full hover:px-7">
+              <a href="./home.html" class="" >Home</a>
+            </li>
+
+            <li class=" hover:text-white p-2 w-full  hover:bg-red-600 hover:px-7">
+              <a href="./pages/about.html" class=" ">About</a>
+            </li>
+
+            <li class=" hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
+              <a href="./pages/services.html" class="" >Services</a>
+            </li>
+
+            <li class="  hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7  ">
+              <a href="./pages/class.html" class="">Class</a>
+            </li>
+            
+            <li class="  hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
+              <a href="./pages/contact.html"  class="">Contact</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="loginSignUp block md:block lg:hidden w-full font-bold">
+          <ul
+            class="ulLogSign flex flex-col  w-full md:w-full text-[20px] md:text-[23px] gap-2 md:gap-3 mt-9 md:mt-10 transition-all duration-300"
+          >
+            <li class="hover:text-white hover:bg-red-600 p-2 hover:w-full  hover:px-7 "><a href="./auth/login.html"  class="">Login</a></li>
+            <li class="hover:text-white hover:bg-red-600 p-2  hover:w-full hover:px-7  "><a href="./auth/signUp.html"  class="">Sign Up</a></li>
+          </ul>
+        </section>
+      </div>
+    </header>
     
 
     <!-- ABOUT US MAIN CONTAINER -->
@@ -46,7 +172,7 @@
               WANT TO KNOW US?
             </h5>
             <h1
-              class="flex flex-row text-[43px] md:text-8xl lg:text-9xl tracking-widest text-white font-semibold gap-4"
+              class="flex flex-row text-[43px] md:text-8xl lg:text-9xl tracking-widest text-white font-semibold gap-4 animate-pulse"
             >
               ABOUT <span class="text-red-600">US</span>
             </h1>
