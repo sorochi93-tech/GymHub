@@ -24,7 +24,6 @@
     --color-teal-800: oklch(43.7% 0.078 188.216);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-purple-500: oklch(62.7% 0.265 303.9);
-    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -68,7 +67,6 @@
     --radius-2xl: 1rem;
     --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
-    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
@@ -474,9 +472,6 @@
   }
   .h-\[180px\] {
     height: 180px;
-  }
-  .h-\[200px\] {
-    height: 200px;
   }
   .h-\[580vh\] {
     height: 580vh;
@@ -898,6 +893,12 @@
       background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
   }
+  .bg-black\/75 {
+    background-color: color-mix(in srgb, #000 75%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 75%, transparent);
+    }
+  }
   .bg-black\/80 {
     background-color: color-mix(in srgb, #000 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1033,6 +1034,9 @@
   .bg-\[url\(\'\.\/assets\/Images\/Img2\.jpg\'\)\] {
     background-image: url('./assets/Images/Img2.jpg');
   }
+  .bg-\[url\(\'\/Frontend\/assets\/Images\/Img2\.jpg\'\)\] {
+    background-image: url('/Frontend/assets/Images/Img2.jpg');
+  }
   .bg-\[url\(\'\/Frontend\/assets\/Images\/WEIGHTLIGT\.jpg\'\)\] {
     background-image: url('/Frontend/assets/Images/WEIGHTLIGT.jpg');
   }
@@ -1050,6 +1054,9 @@
   }
   .bg-\[url\(\'\/Frontend\/assets\/Images\/image\.png\'\)\] {
     background-image: url('/Frontend/assets/Images/image.png');
+  }
+  .bg-\[url\(\'\/Frontend\/assets\/Images\/img11\.jpg\'\)\] {
+    background-image: url('/Frontend/assets/Images/img11.jpg');
   }
   .from-black {
     --tw-gradient-from: var(--color-black);
@@ -1510,9 +1517,6 @@
   .text-gray-300 {
     color: var(--color-gray-300);
   }
-  .text-gray-800 {
-    color: var(--color-gray-800);
-  }
   .text-green-600 {
     color: var(--color-green-600);
   }
@@ -1731,13 +1735,6 @@
       }
     }
   }
-  .hover\:bg-gray-300 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-300);
-      }
-    }
-  }
   .hover\:bg-red-600 {
     &:hover {
       @media (hover: hover) {
@@ -1848,13 +1845,6 @@
       }
     }
   }
-  .hover\:text-gray-50 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-50);
-      }
-    }
-  }
   .hover\:text-red-600 {
     &:hover {
       @media (hover: hover) {
@@ -1883,13 +1873,6 @@
         @supports (color: color-mix(in lab, red, red)) {
           color: color-mix(in oklab, var(--color-white) 50%, transparent);
         }
-      }
-    }
-  }
-  .hover\:underline {
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: underline;
       }
     }
   }
@@ -4077,6 +4060,12 @@
       line-height: calc(var(--spacing) * 11);
     }
   }
+  .lg\:leading-16 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 16);
+      line-height: calc(var(--spacing) * 16);
+    }
+  }
   .lg\:font-bold {
     @media (width >= 64rem) {
       --tw-font-weight: var(--font-weight-bold);
@@ -4364,12 +4353,6 @@ body {
   syntax: "*";
   inherits: false;
   initial-value: 1;
-}
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
 }
 @keyframes pulse {
   50% {
