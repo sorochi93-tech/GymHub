@@ -55,9 +55,9 @@
             >
           </div>
 
-          <button id="toggle-button" class=" flex flex-col items-start justify-between lg:hidden gap-1 md:gap-2 mt-1 mb-1 focus:outline-none hover:bg-gray-100 focus:bg-gray-300 p-3 md:p-5">
+          <button id="toggle-button" class=" flex flex-col items-start justify-between lg:hidden gap-1 md:gap-2 mt-1 mb-1  bg-gray-300 opacity-85 p-3 md:p-5">
             <!-- top line -->
-            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300"></span>
+            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300 "></span>
             <!-- middle line -->
             <span class=" w-5 md:w-12  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300 "></span>
             <!-- middle line 2 -->
@@ -118,11 +118,11 @@
       <!-- Responsive -->
       <div
         id="dropdown"
-        class="hidden lg:hidden p-5 w-70 md:w-130 h-screen pb-14  bg-gray-200 px-7 md:px-10"
+        class="hidden lg:hidden p-5 w-70 md:w-130 h-screen pb-14  bg-gray-200 px-7 md:px-10 text-[20px] md:text-[25px] lg:text-[16px]"
       >
         <section class="ulSec flex flex-col w-full h-auto">
           <ul
-            class="flex flex-col text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 font-bold pt-7 md:pt-7 w-full h-auto transition-all duration-300"
+            class="flex flex-col text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 font-bold pt-1 md:pt-7 w-full h-auto transition-all duration-300"
           >
             <li class=" hover:text-white p-2 hover:bg-red-600   hover:w-full hover:px-7">
               <a href="../index.html" class="" >Home</a>
@@ -148,7 +148,7 @@
 
         <section class="loginSignUp block md:block lg:hidden w-full font-bold">
           <ul
-            class="ulLogSign flex flex-col  w-full md:w-full text-[20px] md:text-[23px] gap-2 md:gap-3 mt-9 md:mt-10 transition-all duration-300"
+            class="ulLogSign flex flex-col  w-full md:w-full text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 mt-9 md:mt-10 transition-all duration-300"
           >
             <li class="hover:text-white hover:bg-red-600 p-2 hover:w-full  hover:px-7 "><a href="../auth/login.html"  class="">Login</a></li>
             <li class="hover:text-white hover:bg-red-600 p-2  hover:w-full hover:px-7  "><a href="../auth/signUp.html"  class="">Sign Up</a></li>
@@ -170,11 +170,11 @@
             <h5
               class="text-gray-300 tracking-widest text-sm md:text-[20px] lg:text-[16px]"
             >
-              WELCOME TO GYMHUB
+              Welcome To GymHub
             </h5>
             
             <div
-              class="h1Div flex flex-col w-full justify-center items-center lg:justify-start lg:items-start text-[36px] sm:text-[35px] md:text-8xl lg:text-7xl font-extrabold tracking-wider lg:tracking-widest mb-0 md:mb-6 lg:mb-6 pt-0 md:pt-0 lg:pt-0 mt-9 lg:animate-bounce md:gap-1"
+              class="h1Div flex flex-col w-full justify-center items-center lg:justify-start lg:items-start text-[33px] sm:text-[35px] md:text-6xl lg:text-7xl font-extrabold tracking-wider lg:tracking-widest mb-0 md:mb-6 lg:mb-6 pt-0 md:pt-0 lg:pt-0 mt-9 lg:animate-bounce md:gap-1"
             >
               <h1 class="text-red-600">OUR <span class="text-white/85">SERVICES</span></h1>
               <h2 class="text-white/85 text-[15px] md:text-[27px] lg:text-[20px] animate-pulse">Putting You First</h2>
@@ -186,7 +186,7 @@
           >
             
             <p
-              class="flex lg:items-start lg:text-left text-white sm:text-[15px] text-[18px] md:text-[28px] lg:text-[20px] lg:pr-48 "
+              class="flex lg:items-start lg:text-left text-white sm:text-[15px] text-[18px] md:text-[28px] lg:text-[18px] lg:pr-48 "
             >
               At GymHub, we don't just lift weights- we lift each other. Whether
               it is your first day or your 500th, you fit in here. Stop waiting
@@ -211,19 +211,85 @@
         </section>
 
         <section class="priceSec text-white/65">
-          <div class="priceSecSonDiv grid grid-cols-1 w-full h-auto">
-            <div class="priceChartHeaderDiv relative h-[50vh] lg:h-[]">
-              <h1>PRICE CHART</h1>
-              <h4>Exclusive Princing Plan</h4>
-              <p>Here are the categories of programs you can enrol for at GymHub, and their best afforadable rates</p>
+          <div class="priceSecSonDiv grid grid-cols-1 w-full h-auto px-7 md:px-10 lg:px-10 pt-10 md:pt-16 lg:pt-8 gap-3 md:gap-5 lg:gap-0 pb-3">
+            <div class="priceChartHeaderDiv flex flex-col justify-center items-center text-center relative h-auto lg:h-[40vh] gap-2 py-2">
+              <h1 class="bg-white text-red-600 p-2  tracking-widest font-bold">PRICE CHART</h1>
+              <h4 class=" font-bold text-[34px] md:text-[40px] lg:text-[30px] md:tracking-wider lg:tracking-widest">Exclusive Princing Plan</h4>
+              <p class=" ">Here are the categories of programs you can enrol for at GymHub, and their best afforadable rates.</p>
             </div>
-            <div class="majorPricePackageContainer grid grid-col-1 lg:grid-cols-3  w-full">
-              <div class="beginnerPackageDiv relative bg-[url('/Frontend/assets/Images/Img2.jpg')] bg-cover bg-no-repeat w-full h-[50vh]">
-                <div class="absolute inset-0 bg-black/50 "></div>
 
+            <div class="majorPricePackageContainer grid grid-col-1 lg:grid-cols-3  w-full gap-12 md:gap-16 lg:gap-8 pt-7 md:pt-9 lg:pt-1 ">
+              <div class="beginnerPackageDiv relative flex flex-col w-full h-auto lg:h-auto lg:border-[2px] lg:border-white/5 pb-5 hover:animate-pulse lg:hover:border-white/15">
+                <div class="bgImageDiv relative bg-[url('/Frontend/assets/Images/img13.jpg')] bg-cover bg-no-repeat w-full h-[40vh]">
+                  <div class="absolute inset-0 bg-black/50 "></div>
+                  <div class="beginnerText relative flex justify-center items-end w-full h-[40vh] ">
+                    <h4 class="flex p-3 md:pt-6 lg:p-3 bg-white/90 text-red-600 font-bold justify-center items-center w-[80%] text-[28px] md:text-[36px] lg:text-[25px] hover:bg-red-600 hover:text-white/80">Beginners</h4>
+                  </div>            
+                </div>
+
+                <div class="textDescriptionDiv flex flex-col justify-center items-center gap-4">
+                  <div class="flex pt-3">
+                    <p class="flex flex-row items-center gap-2 font-semibold text-[22px] md:text-[34px] lg:text-[22px]">$ <span class="font-bold text-white/90 text-5xl md:text-7xl lg:text-5xl">23</span> <span class="pt-4">p/m</span></p>
+                  </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                    <p class="tracking-wider">Free Hand</p>
+                    <p class="tracking-wider">Gym Fitness</p>
+                    <p class="tracking-wider">Weight Loss</p>
+                    <p class="tracking-wider">Personal Trainer</p>
+                    <p class="tracking-wider">Cycling</p>
+                   </div>
+
+                   <a href="" class="tracking-wider text-center text-white/90 p-4 md:p-5 lg:p-3 bg-red-600 w-[70%] lg:w-[50%] font-bold hover:bg-white/90 hover:text-red-600">Purchase Now <i class="fa-utility fa-semibold fa-arrow-right"></i></a>
+                </div>
               </div>
 
+              <div class="basicPackageDiv relative flex flex-col w-full h-auto lg:h-auto lg:border-[2px] lg:border-white/5 pb-5 hover:animate-pulse  lg:hover:border-white/15">
+                <div class="bgImageDiv relative bg-[url('/Frontend/assets/Images/Img2.jpg')] bg-cover bg-no-repeat w-full h-[40vh]">
+                  <div class="absolute inset-0 bg-black/50 "></div>
+                  <div class="basicText relative flex justify-center items-end w-full h-[40vh] ">
+                    <h4 class="flex p-3 md:pt-6 lg:p-3 bg-white/90 text-red-600 font-bold justify-center items-center w-[80%] text-[28px] md:text-[36px] lg:text-[25px] hover:bg-red-600 hover:text-white/80">Basic</h4>
+                  </div>            
+                </div>
 
+                <div class="textDescriptionDiv flex flex-col justify-center items-center gap-4">
+                  <div class="flex pt-3">
+                    <p class="flex flex-row items-center gap-2 font-semibold text-[22px] md:text-[34px] lg:text-[22px]">$ <span class="font-bold text-white/90 text-5xl md:text-7xl lg:text-5xl">48</span> <span class="pt-4">p/m</span></p>
+                  </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                    <p class="tracking-wider">Free Hand</p>
+                    <p class="tracking-wider">Gym Fitness</p>
+                    <p class="tracking-wider">Weight Loss</p>
+                    <p class="tracking-wider">Personal Trainer</p>
+                    <p class="tracking-wider">Cycling</p>
+                   </div>
+
+                   <a href="" class="tracking-wider text-center text-white/90 p-4 md:p-5 lg:p-3 bg-red-600 w-[70%] lg:w-[50%] font-bold hover:bg-white/90 hover:text-red-600">Purchase Now <i class="fa-utility fa-semibold fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="advancePackageDiv relative flex flex-col w-full h-auto lg:h-auto lg:border-[2px] lg:border-white/5 pb-5 hover:animate-pulse  lg:hover:border-white/15">
+                <div class="bgImageDiv relative bg-[url('/Frontend/assets/Images/img5.jpg')] bg-cover bg-no-repeat w-full h-[40vh]">
+                  <div class="absolute inset-0 bg-black/50 "></div>
+                  <div class="basicText relative flex justify-center items-end w-full h-[40vh] ">
+                    <h4 class="flex p-3 md:pt-6 lg:p-3 bg-white/90 text-red-600 font-bold justify-center items-center w-[80%] text-[28px] md:text-[36px] lg:text-[25px] hover:bg-red-600 hover:text-white/80">Advance</h4>
+                  </div>            
+                </div>
+
+                <div class="textDescriptionDiv flex flex-col justify-center items-center gap-4">
+                  <div class="flex pt-3">
+                    <p class="flex flex-row items-center gap-2 font-semibold text-[22px] md:text-[34px] lg:text-[22px]">$ <span class="font-bold text-white/90 text-5xl md:text-7xl lg:text-5xl">80</span> <span class="pt-4">p/m</span></p>
+                  </div>
+                   <div class="flex flex-col justify-center items-center gap-1">
+                    <p class="tracking-wider">Free Hand</p>
+                    <p class="tracking-wider">Gym Fitness</p>
+                    <p class="tracking-wider">Weight Loss</p>
+                    <p class="tracking-wider">Personal Trainer</p>
+                    <p class="tracking-wider">Cycling</p>
+                   </div>
+
+                   <a href="" class="tracking-wider text-center text-white/90 p-4 md:p-5 lg:p-3 bg-red-600 w-[70%] lg:w-[50%] font-bold hover:bg-white/90 hover:text-red-600">Purchase Now <i class="fa-utility fa-semibold fa-arrow-right"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
