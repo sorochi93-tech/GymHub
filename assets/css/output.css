@@ -67,7 +67,6 @@
     --radius-2xl: 1rem;
     --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
-    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
@@ -1392,6 +1391,9 @@
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
   }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -1486,6 +1488,10 @@
   }
   .text-\[43px\] {
     font-size: 43px;
+  }
+  .leading-9 {
+    --tw-leading: calc(var(--spacing) * 9);
+    line-height: calc(var(--spacing) * 9);
   }
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
@@ -2200,6 +2206,11 @@
   .md\:h-\[20vh\] {
     @media (width >= 48rem) {
       height: 20vh;
+    }
+  }
+  .md\:h-\[30vh\] {
+    @media (width >= 48rem) {
+      height: 30vh;
     }
   }
   .md\:h-\[38vh\] {
@@ -4194,10 +4205,10 @@
       font-weight: var(--font-weight-semibold);
     }
   }
-  .lg\:-tracking-tight {
+  .lg\:tracking-tight {
     @media (width >= 64rem) {
-      --tw-tracking: calc(var(--tracking-tight) * -1);
-      letter-spacing: calc(var(--tracking-tight) * -1);
+      --tw-tracking: var(--tracking-tight);
+      letter-spacing: var(--tracking-tight);
     }
   }
   .lg\:tracking-wide {
@@ -4481,12 +4492,6 @@ body {
   syntax: "*";
   inherits: false;
   initial-value: 1;
-}
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
 }
 @keyframes pulse {
   50% {
