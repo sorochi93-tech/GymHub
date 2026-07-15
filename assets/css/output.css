@@ -1049,20 +1049,29 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\.\.\/assets\/Images\/Img2\.jpg\'\)\] {
+    background-image: url('../assets/Images/Img2.jpg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/Images\/aaron-brogden-pLKEaAzUw40-unsplash\.jpg\'\)\] {
+    background-image: url('../assets/Images/aaron-brogden-pLKEaAzUw40-unsplash.jpg');
+  }
   .bg-\[url\(\'\.\.\/assets\/Images\/gymhouse\.jpg\'\)\] {
     background-image: url('../assets/Images/gymhouse.jpg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/Images\/img5\.jpg\'\)\] {
+    background-image: url('../assets/Images/img5.jpg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/Images\/img11\.jpg\'\)\] {
+    background-image: url('../assets/Images/img11.jpg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/Images\/img13\.jpg\'\)\] {
+    background-image: url('../assets/Images/img13.jpg');
   }
   .bg-\[url\(\'\.\/assets\/Images\/Img2\.jpg\'\)\] {
     background-image: url('./assets/Images/Img2.jpg');
   }
-  .bg-\[url\(\'\/Frontend\/assets\/Images\/Img2\.jpg\'\)\] {
-    background-image: url('/Frontend/assets/Images/Img2.jpg');
-  }
   .bg-\[url\(\'\/Frontend\/assets\/Images\/WEIGHTLIGT\.jpg\'\)\] {
     background-image: url('/Frontend/assets/Images/WEIGHTLIGT.jpg');
-  }
-  .bg-\[url\(\'\/Frontend\/assets\/Images\/aaron-brogden-pLKEaAzUw40-unsplash\.jpg\'\)\] {
-    background-image: url('/Frontend/assets/Images/aaron-brogden-pLKEaAzUw40-unsplash.jpg');
   }
   .bg-\[url\(\'\/Frontend\/assets\/Images\/anastase-maragos-jzP8_Rg6aVU-unsplash\.jpg\'\)\] {
     background-image: url('/Frontend/assets/Images/anastase-maragos-jzP8_Rg6aVU-unsplash.jpg');
@@ -1072,15 +1081,6 @@
   }
   .bg-\[url\(\'\/Frontend\/assets\/Images\/image\.png\'\)\] {
     background-image: url('/Frontend/assets/Images/image.png');
-  }
-  .bg-\[url\(\'\/Frontend\/assets\/Images\/img5\.jpg\'\)\] {
-    background-image: url('/Frontend/assets/Images/img5.jpg');
-  }
-  .bg-\[url\(\'\/Frontend\/assets\/Images\/img11\.jpg\'\)\] {
-    background-image: url('/Frontend/assets/Images/img11.jpg');
-  }
-  .bg-\[url\(\'\/Frontend\/assets\/Images\/img13\.jpg\'\)\] {
-    background-image: url('/Frontend/assets/Images/img13.jpg');
   }
   .from-black {
     --tw-gradient-from: var(--color-black);
