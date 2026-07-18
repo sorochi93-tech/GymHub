@@ -83,7 +83,7 @@ body {
 }
 
 .indexHero-bg{
-  background-image: url("/Frontend/assets/Images/Img2.jpg");
+  background-image: url("/assets/Images/Img2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,5 +100,11 @@ body {
   background-image: url("/assets/Images/aaron-brogden-pLKEaAzUw40-unsplash.jpg");
   background-size: cover;
   background-position: top;
+  background-repeat: no-repeat;
+}
+
+.firstThreeClassSec-bg{
+  background-image: url("/assets/Images/anastase-maragos-jzP8_Rg6aVU-unsplash.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
