@@ -60,7 +60,36 @@ body {
      
 }
 
-.hero-bg {
+.servicesHero-bg {
+  background-image: url("/assets/Images/img11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.classHero-bg {
+  background-image: url("/assets/Images/img11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.aboutHero-bg {
+  background-image: url("/assets/Images/img11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.indexHero-bg {
+  background-image: url("/assets/Images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contactHero-bg {
   background-image: url("/assets/Images/img11.jpg");
   background-size: cover;
   background-position: center;
