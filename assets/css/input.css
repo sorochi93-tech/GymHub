@@ -68,7 +68,7 @@ body {
 }
 
 .classHero-bg {
-  background-image: url("/assets/Images/img11.jpg");
+  background-image: url("/assets/Images/bodybuilder.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,22 +76,29 @@ body {
 
 
 .aboutHero-bg {
-  background-image: url("/assets/Images/img11.jpg");
+  background-image: url("/assets/Images/WEIGHTLIGT.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.indexHero-bg {
+.indexHero-bg{
+  background-image: url("/Frontend/assets/Images/Img2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .indexHero-bg {
   background-image: url("/assets/Images/img2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
 .contactHero-bg {
-  background-image: url("/assets/Images/img11.jpg");
+  background-image: url("/assets/Images/aaron-brogden-pLKEaAzUw40-unsplash.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
