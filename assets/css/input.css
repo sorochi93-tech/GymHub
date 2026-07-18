@@ -59,3 +59,10 @@ body {
 @media screen and (min-width: 325px) and (max-width: 767px) {
      
 }
+
+.hero-bg {
+  background-image: url("/assets/Images/img11.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
