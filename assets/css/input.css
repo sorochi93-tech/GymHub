@@ -113,5 +113,28 @@ body {
   background-image: url("/assets/Images/cagin-kargi-Qzp60FT380E-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   
+}
+
+.beginnerBgImageDiv{
+  background-image: url("/assets/Images/imagenew.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.basicBgImageDiv{
+  background-image: url("/assets/Images/imagenew4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advanceBgImageDiv{
+  background-image: url("/assets/Images/bodybuilder.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
