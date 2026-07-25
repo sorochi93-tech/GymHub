@@ -60,6 +60,7 @@ body {
      
 }
 
+/* ALL BACKGROUND IMAGE STYLE SETUPS */
 .servicesHero-bg {
   background-image: url("/assets/Images/img11.jpg");
   background-size: cover;
@@ -138,3 +139,52 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.checkEmailBody{
+  background-image: url("/assets/Images/imagenew5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.forgotPasswordBody{
+  background-image: url("/assets/Images/imagenew5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.loginBody{
+  background-image: url("/assets/Images/imagenew5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signUpBody{
+  background-image: url("/assets/Images/imagenew5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.resetPwordBody{
+  background-image: url("/assets/Images/imagenew5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.resetPwordSuccessfulBody{
+  background-image: url("/assets/Images/imagenew5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgImageLoginSec{
+  background-image: url("/assets/Images/gymhouse.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
