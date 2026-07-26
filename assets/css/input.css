@@ -140,51 +140,58 @@ body {
   background-position: center;
 }
 
-.checkEmailBody{
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* .forgotPasswordBody{
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.loginBody{
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.signUpBody{
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.resetPwordBody{
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.resetPwordSuccessfulBody{
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
-
 .bgImageLoginSec{
   background-image: url("/assets/Images/gymhouse.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 } 
+
+.forgotPasswordBgImage{
+  background-image: url("/assets/Images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+.checkEmailBg{
+  background-image: url("/assets/Images/imagenew.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.logi{
+  background-image: url("/assets/Images/imagenew.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signUpB{
+  background-image: url("/assets/Images/imagenew.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.resetPwordB{
+  background-image: url("/assets/Images/imagenew.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.resetPwordSuccessfulB{
+  background-image: url("/assets/Images/imagenew.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
