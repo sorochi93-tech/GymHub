@@ -141,42 +141,42 @@ body {
 }
 
 .checkEmailBody{
-  background-image: url("/assets/Images/imagenew5.jfif");
+  background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .forgotPasswordBody{
-  background-image: url("/assets/Images/imagenew5.jfif");
+  background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .loginBody{
-  background-image: url("/assets/Images/imagenew5.jfif");
+  background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .signUpBody{
-  background-image: url("/assets/Images/imagenew5.jfif");
+  background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .resetPwordBody{
-  background-image: url("/assets/Images/imagenew5.jfif");
+  background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .resetPwordSuccessfulBody{
-  background-image: url("/assets/Images/imagenew5.jfif");
+  background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
