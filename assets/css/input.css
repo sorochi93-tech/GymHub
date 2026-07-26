@@ -147,7 +147,7 @@ body {
   background-position: center;
 }
 
-.forgotPasswordBody{
+/* .forgotPasswordBody{
   background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +180,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 
 .bgImageLoginSec{
   background-image: url("/assets/Images/gymhouse.jpg");
