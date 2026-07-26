@@ -145,6 +145,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 30%;
 }
 
 .forgotPasswordBody{
@@ -152,6 +153,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 30%;  
 }
 
 .loginBody{
@@ -159,6 +161,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 30%;
 }
 
 .signUpBody{
@@ -166,6 +169,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 30%;
 }
 
 .resetPwordBody{
@@ -173,6 +177,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 30%;
 }
 
 .resetPwordSuccessfulBody{
@@ -180,6 +185,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 30%;
 }
 
 .bgImageLoginSec{
