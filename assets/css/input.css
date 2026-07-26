@@ -148,7 +148,7 @@ body {
 } 
 
 .forgotPasswordBgImage{
-  background-image: url("/assets/Images/image.png");
+  background-image: url("/assets/Images/image.png") !important; 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
