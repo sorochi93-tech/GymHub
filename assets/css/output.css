@@ -4323,13 +4323,13 @@ body {
   background-size: cover;
   background-position: center;
 }
-.checkEmailBg {
+.otpBgImage {
   background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.logi {
+.login {
   background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;

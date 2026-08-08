@@ -159,7 +159,7 @@ body {
 
 
 
-.checkEmailBg{
+.otpBgImage{
   background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,7 +167,7 @@ body {
 }
 
 
-.logi{
+.login{
   background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
