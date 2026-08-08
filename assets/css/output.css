@@ -1046,9 +1046,6 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\/Frontend\/assets\/Images\/image\.png\'\)\] {
-    background-image: url('/Frontend/assets/Images/image.png');
-  }
   .from-black {
     --tw-gradient-from: var(--color-black);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -4324,7 +4321,25 @@ body {
   background-position: center;
 }
 .otpBgImage {
-  background-image: url("/assets/Images/imagenew.webp");
+  background-image: url("/assets/Images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.resetPasswordBgImage {
+  background-image: url("/assets/Images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.resetpasswordSuccessBgImage {
+  background-image: url("/assets/Images/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.trialSec {
+  background-image: url("ricardo-henri-UDOpbhxNNU4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4342,12 +4357,6 @@ body {
   background-position: center;
 }
 .resetPwordB {
-  background-image: url("/assets/Images/imagenew.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.resetPwordSuccessfulB {
   background-image: url("/assets/Images/imagenew.webp");
   background-repeat: no-repeat;
   background-size: cover;
