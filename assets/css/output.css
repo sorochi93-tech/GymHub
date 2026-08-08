@@ -2982,9 +2982,9 @@
       margin-top: calc(var(--spacing) * 14);
     }
   }
-  .lg\:mt-24 {
+  .lg\:mt-16 {
     @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 24);
+      margin-top: calc(var(--spacing) * 16);
     }
   }
   .lg\:mt-auto {
@@ -4339,7 +4339,7 @@ body {
   background-position: center;
 }
 .trialSec {
-  background-image: url("ricardo-henri-UDOpbhxNNU4-unsplash.jpg");
+  background-image: url("/assets/Images/ricardo-henri-UDOpbhxNNU4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
