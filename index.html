@@ -12,6 +12,8 @@
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -231,7 +233,7 @@
             <div class="flex flex-col lg:flex-row w-full justify-center mt-9 gap-8">
               <div class="flex flex-col md:flex-row w-full gap-8">
                 <div
-                  class="flex flex-col justify-center items-center text-center gap-3 p-5 px-4 hover:bg-white/5 rounded-lg w-full h-full md:h-auto lg:h-[50vh] border-[1px]  lg:border-white/25 border-white/40"
+                  class="flex flex-col justify-center items-center text-center gap-3 p-5 px-4 hover:bg-white/5 rounded-lg w-full h-full md:h-auto lg:h-[50vh] border-[1px]  lg:border-white/25 border-white/40 "
                 >
                   <span><i class="ri-todo-fill text-4xl text-white"></i></span>
                   <h3
@@ -531,7 +533,7 @@
     </main>
 
     <footer class="footerMain py-4 bg-gray-900 pt-40">
-      <div class="footerSonDiv flex flex-col w-full h-auto">
+      <div class="footerSonDiv flex flex-col w-full h-auto relative">
         <section class="topSec flex justify-center items-center px-3.5 md:px-10 lg:px-10 pb-5">
           <h3
             class="text-[20px] md:text-3xl lg:text-[20px] bg-linear-to-r from-white to-white/80 bg-clip-text text-transparent opacity-100 md:px-45 lg:px-120 text-center font-bold pb-6"
@@ -670,6 +672,15 @@
               </ul>
             </div>
           </div>
+        </section>
+
+        <section class="ScrollToTopSection fixed bottom-18 lg:bottom-14 right-2.5 md:right-3.5 lg:right-3.5 flex flex-col justify-center items-center px-3.5 md:px-10 lg:px-10">
+          <div class="scrollToTop flex flex-col justify-center items-center w-[60px] h-[60px]  md:w-[75px] md:h-[75px]  lg:w-[60px] lg:h-[60px] bg-white rounded-full">
+            <a href="" class="scrollToTopIcon flex flex-col justify-center items-center w-[55px] h-[55px]  md:w-[70px] md:h-[70px]  lg:w-[55px] lg:h-[55px] bg-red-600 rounded-full">
+              <span class="material-symbols-outlined rotate-90 text-white text-8xl">arrow_back</span>
+            </a>
+          </div>
+
         </section>
 
         <section
