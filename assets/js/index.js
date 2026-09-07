@@ -1,3 +1,4 @@
+
 const scrollToTopDiv = document.getElementById("scrollToTopSection");
 
 const toggleButton = document.getElementById("toggle-button");
