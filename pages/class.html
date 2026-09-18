@@ -57,13 +57,8 @@
             >
           </div>
 
-          <button id="toggle-button" class=" flex flex-col items-start justify-between lg:hidden gap-1 md:gap-2 mt-1 mb-1 bg-gray-300 opacity-85 p-3 md:p-5">
-            <!-- top line -->
-            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300"></span>
-            <!-- middle line -->
-            <span class=" w-5 md:w-12  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300 "></span>
-            <!-- bottom line -->
-            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300  "></span>
+          <button id="menuBtn" class="lg:hidden  text-black text-4xl md:text-6xl font-bold  bg-gray-300 opacity-85 p-1 md:p-2">
+            <i id="menuIcon" class="ri-menu-line"></i>
           </button>
         </section>
 
@@ -117,7 +112,7 @@
 
       <!-- Responsive -->
       <div
-        id="dropdown"
+        id="mobileMenu"
         class="hidden lg:hidden p-5 w-70 md:w-130 h-screen pb-14  bg-gray-200 px-3.5 md:px-10 text-[20px] md:text-[25px] lg:text-[16px] text-black"
       >
         <section class="ulSec flex flex-col w-full h-auto">
@@ -743,7 +738,7 @@
         <section id="scrollToTopSection" 
         class=" fixed bottom-[72px] lg:bottom-14 right-3.5 md:right-3.5 lg:right-3.5 flex flex-col justify-center items-center px-3.5 md:px-10 lg:px-10 z-[9999]">
           <div class="scrollToTop flex flex-col justify-center items-center w-[50px] h-[50px]  md:w-[75px] md:h-[75px] lg:w-[50px] lg:h-[50px] bg-white rounded-full">
-            <a href="#top" aria-label="scroll to top" class="scrollToTopIcon flex flex-col justify-center items-center w-[45px] h-[45px]  md:w-[70px] md:h-[70px]  lg:w-[45px] lg:h-[45px] bg-red-600 rounded-full text-white">
+            <a href="#top" aria-label="scroll to top" class="scrollToTopIcon flex flex-col justify-center items-center w-[45px] h-[45px]  md:w-[70px] md:h-[70px]  lg:w-[45px] lg:h-[45px] text-[20px] md:text-4xl lg:text-[16px] bg-red-600 rounded-full text-white">
               <i class="ri-arrow-up-line"></i>
             </a>
           </div>  

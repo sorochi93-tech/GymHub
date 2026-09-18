@@ -10,7 +10,10 @@
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -27,23 +30,25 @@
   </head>
 
   <body class="bg-black/95">
-    <header class="z-100 fixed top-0 w-full justify-between ">
+    <header class="z-100 fixed top-0 w-full justify-between">
       <div
         class="navbar flex flex-row justify-between bg-gray-200 border-b-2 border-gray-300 items-center w-full px-3.5 md:px-10 lg:px-10 sm:px-3 py-3 h-20 md:h-24 lg:h-16"
       >
         <section
           class="logoSec flex flex-row items-center justify-between w-full lg:w-40"
         >
-
           <div
-            href="../index.html" class="logoDiv flex flex-row gap-0 items-center "
+            href="../index.html"
+            class="logoDiv flex flex-row gap-0 items-center"
           >
             <a
               href="../index.html"
               class="text-4xl md:text-6xl lg:text-4xl text-red-800 opacity-35 font-bold"
               >II</a
             >
-            <a href="../index.html" class=" text-3xl md:text-[40px] lg:text-[30px] font-bold"
+            <a
+              href="../index.html"
+              class="text-3xl md:text-[40px] lg:text-[30px] font-bold"
               ><span
                 class="text-4xl md:text-6xl lg:text-4xl text-red-600 font-bold font-sans"
                 >G</span
@@ -54,13 +59,10 @@
             >
           </div>
 
-          <button id="toggle-button" class=" flex flex-col items-start justify-between lg:hidden gap-1 md:gap-2 mt-1 mb-1 bg-gray-300 opacity-85 p-3 md:p-5">
-            <!-- top line -->
-            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300"></span>
-            <!-- middle line -->
-            <span class=" w-5 md:w-12  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300 "></span>
-            <!-- bottom line -->
-            <span class=" w-8 md:w-16  h-[3px] md:h-[7px] bg-black font-semibold transition-all duration-300  "></span>
+          <button
+            id="menuBtn"
+            class="lg:hidden text-black text-4xl md:text-6xl font-bold  bg-gray-300 opacity-85 p-1 md:p-2"
+          ><i id="menuIcon" class="ri-menu-line"></i>
           </button>
         </section>
 
@@ -71,25 +73,37 @@
             <li>
               <a
                 href="../index.html"
-                class="hover:text-red-800  active:text-red-800"
+                class="hover:text-red-800 active:text-red-800"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="./about.html"
-                class="hover:text-red-800  active:text-red-800"
+                class="hover:text-red-800 active:text-red-800"
                 >About</a
               >
             </li>
             <li>
-              <a href="./services.html" class="hover:text-red-800  active:text-red-800">Services</a>
+              <a
+                href="./services.html"
+                class="hover:text-red-800 active:text-red-800"
+                >Services</a
+              >
             </li>
             <li>
-              <a href="./class.html" class="hover:text-red-800  active:text-red-800">Class</a>
+              <a
+                href="./class.html"
+                class="hover:text-red-800 active:text-red-800"
+                >Class</a
+              >
             </li>
             <li>
-              <a href="./contact.html" class="hover:text-red-800  active:text-red-800">Contact</a>
+              <a
+                href="./contact.html"
+                class="hover:text-red-800 active:text-red-800"
+                >Contact</a
+              >
             </li>
           </ul>
         </section>
@@ -100,12 +114,12 @@
           >
             <a
               href="../auth/login.html"
-              class="hover:text-red-800  border-2 border-gray-300 px-4 py-1.5  active:text-red-800"
+              class="hover:text-red-800 border-2 border-gray-300 px-4 py-1.5 active:text-red-800"
               >Login</a
             >
             <a
               href="../auth/signUp.html"
-              class="hover:text-red-800  border-2 border-gray-300 px-4 py-1.5  active:text-red-800"
+              class="hover:text-red-800 border-2 border-gray-300 px-4 py-1.5 active:text-red-800"
               >Sign Up</a
             >
           </ul>
@@ -114,46 +128,61 @@
 
       <!-- Responsive -->
       <div
-        id="dropdown"
-        class="hidden lg:hidden p-5 w-70 md:w-130 h-screen pb-14  bg-gray-200 px-3.5 md:px-10 text-[20px] md:text-[25px] lg:text-[16px]"
+        id="mobileMenu"
+        class=" hidden lg:hidden p-5 w-70 md:w-130 h-screen pb-14 bg-gray-200 px-3.5 md:px-10 text-[20px] md:text-[25px] lg:text-[16px]"
       >
         <section class="ulSec flex flex-col w-full h-auto">
           <ul
             class="flex flex-col text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 font-bold pt-1 md:pt-7 w-full h-auto transition-all duration-300"
           >
-            <li class=" hover:text-white p-2 hover:bg-red-600   hover:w-full hover:px-7">
-              <a href="../index.html" class="" >Home</a>
+            <li
+              class="hover:text-white p-2 hover:bg-red-600 hover:w-full hover:px-7"
+            >
+              <a href="../index.html" class="">Home</a>
             </li>
 
-            <li class=" hover:text-white p-2 w-full  hover:bg-red-600 hover:px-7">
+            <li class="hover:text-white p-2 w-full hover:bg-red-600 hover:px-7">
               <a href="./about.html" class=" ">About</a>
             </li>
 
-            <li class=" hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
-              <a href="./services.html" class="" >Services</a>
+            <li
+              class="hover:text-white p-2 hover:bg-red-600 hover:w-full hover:px-7"
+            >
+              <a href="./services.html" class="">Services</a>
             </li>
 
-            <li class="  hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7  ">
+            <li
+              class="hover:text-white p-2 hover:bg-red-600 hover:w-full hover:px-7"
+            >
               <a href="./class.html" class="">Class</a>
             </li>
-            
-            <li class="  hover:text-white p-2 hover:bg-red-600  hover:w-full hover:px-7">
-              <a href="./contact.html"  class="">Contact</a>
+
+            <li
+              class="hover:text-white p-2 hover:bg-red-600 hover:w-full hover:px-7"
+            >
+              <a href="./contact.html" class="">Contact</a>
             </li>
           </ul>
         </section>
 
         <section class="loginSignUp block md:block lg:hidden w-full font-bold">
           <ul
-            class="ulLogSign flex flex-col  w-full md:w-full text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 mt-9 md:mt-10 transition-all duration-300"
+            class="ulLogSign flex flex-col w-full md:w-full text-[20px] md:text-[25px] lg:text-[16px] gap-2 md:gap-3 mt-9 md:mt-10 transition-all duration-300"
           >
-            <li class="hover:text-white hover:bg-red-600 p-2 hover:w-full  hover:px-7 "><a href="../auth/login.html"  class="">Login</a></li>
-            <li class="hover:text-white hover:bg-red-600 p-2  hover:w-full hover:px-7  "><a href="../auth/signUp.html"  class="">Sign Up</a></li>
+            <li
+              class="hover:text-white hover:bg-red-600 p-2 hover:w-full hover:px-7"
+            >
+              <a href="../auth/login.html" class="">Login</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-red-600 p-2 hover:w-full hover:px-7"
+            >
+              <a href="../auth/signUp.html" class="">Sign Up</a>
+            </li>
           </ul>
         </section>
       </div>
     </header>
-    
 
     <!-- ABOUT US MAIN CONTAINER -->
     <main class="aboutMain">
@@ -211,7 +240,10 @@
             <h3
               class="text-[20px] md:text-[30px] lg:text-[20px] text-center lg:text-left bg-linear-to-r from-red-400 to-red-800 bg-clip-text text-transparent"
             >
-              About Us <span class="text-white"><i class="fa-utility fa-semibold fa-angle-up"></i></span>
+              About Us
+              <span class="text-white"
+                ><i class="fa-utility fa-semibold fa-angle-up"></i
+              ></span>
             </h3>
             <h1
               class="text-4xl md:text-5xl lg:text-4xl text-center lg:text-left lg:tracking-tight lg:pr-50"
@@ -232,11 +264,31 @@
               fitness journey begins.
             </p>
 
-            <a
-              href=""
+            <!-- BUTTON TRIGERING MODAL VIA READ MORE -->
+            <button id="modalButton"
               class="read text-center w-full text-[20px] md:text-3xl lg:text-[17px] lg:w-36 font-bold py-4 md:py-5 lg:py-3 lg:px-5 rounded border border-red-400 bg-linear-to-r from-red-300 to-red-700 hover:bg-linear-to-l from-red-300 to-red-800"
-              >Read Details</a
             >
+              Read Details
+            </button>
+
+
+            <!-- MODAL SECTION -->
+
+            <section id="secModal" class="fixed hidden inset-0 z-9999 justify-center  bg-white/30 items-center text-center px-3.5 md:px-10 lg:px-10 transition ease-in-out duration-300">
+              <div class=" w-full md:[90%] lg:w-full lg:max-w-lg h-auto bg-white text-black p-6 shadow-2xl rounded-md ">
+                <h1 class="text-[25px] md:text-[30px] lg:text-2xl mb-4 font-sans font-semibold ">Explore More Fitness Wonders</h1>
+
+                <p class="text-[20px] md:text-3xl lg:text-[16px] text-gray-600 font-sans mb-8 tracking-wide text-left">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam quam quae, voluptatem voluptatibus laborum qui non voluptas minima dolore odit, repellendus consequuntur obcaecati deleniti amet id perspiciatis natus veritatis!
+                </p>
+
+                <div class="flex justify-start items-center-center gap-3 text-[20px] md:text-3xl lg:text-[16px]">
+                  <button id="secCancelModal" class=" border-[1px] px-4 md:px-5 lg:px-4 border-gray-50 py-2 md:py-3 lg:py-2 text-white bg-red-600 rounded hover:bg-black hover:text-white transition ease-in-out duration-300">Cancel</button>
+
+                  <a href="" class="border-[1px] px-4 md:px-5 lg:px-4 border-gray-50 py-2 md:py-3 lg:py-2 rounded bg-gray-300 hover:text-white hover:bg-black transition ease-in-out duration-300">Explore</a>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
 
@@ -269,7 +321,7 @@
             </div>
 
             <div
-            class="missionImagesDiv flex flex-col justify-center items-center lg:flex-row w-full h-auto gap-10 lg:gap-4 md:gap-14 "
+              class="missionImagesDiv flex flex-col justify-center items-center lg:flex-row w-full h-auto gap-10 lg:gap-4 md:gap-14"
             >
               <img
                 src="../assets/Images/img14.jpg"
@@ -308,11 +360,10 @@
             <p
               class="text-[18px] md:text-3xl lg:text-[16px] text-center lg:px-30"
             >
-              At GymHub, our vision is to build a community where every 
-              person discovers their strength, transforms 
-              their health, and becomes the best version of themselves.
-              Note " GymHub is a supportive community that
-              encourages consistency, growth and transformation."
+              At GymHub, our vision is to build a community where every person
+              discovers their strength, transforms their health, and becomes the
+              best version of themselves. Note " GymHub is a supportive
+              community that encourages consistency, growth and transformation."
             </p>
 
             <div
@@ -359,7 +410,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-55 object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Michael Madison
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -375,7 +428,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-55 object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Catherine Hayes
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -390,7 +445,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-55 object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Alexanda Cole
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -405,7 +462,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-55 object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Olivia Brooks
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -420,7 +479,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-55 object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Peter Hughes
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -441,7 +502,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-[28vh] object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Xiao Li Wang
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -457,7 +520,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-[28vh] object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Harrison Bruce
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -472,7 +537,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-[28vh] object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Sophia Anderson
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -487,7 +554,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-[28vh] object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Williams Sinclair
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -502,7 +571,9 @@
                     alt=""
                     class="w-full h-[40vh] md:h-[45vh] lg:h-[28vh] object-center rounded mx-6"
                   />
-                  <h3 class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0">
+                  <h3
+                    class="text-[25px] md:text-[35px] lg:text-[20px] pt-1 md:pt-3 lg:pt-0"
+                  >
                     Mariona Leo
                   </h3>
                   <h3 class="text-[15px] md:text-[20px] lg:text-[14px]">
@@ -515,11 +586,12 @@
         </section>
       </div>
     </main>
-    
 
     <footer class="footerMain py-4 bg-gray-900 pt-40">
       <div class="footerSonDiv flex flex-col w-full h-auto">
-        <section class="topSec flex justify-center items-center px-3.5 md:px-10 lg:px-10 pb-5">
+        <section
+          class="topSec flex justify-center items-center px-3.5 md:px-10 lg:px-10 pb-5"
+        >
           <h3
             class="text-[20px] md:text-3xl lg:text-[20px] bg-linear-to-r from-white to-white/80 bg-clip-text text-transparent opacity-100 md:px-45 lg:px-120 text-center font-bold pb-6"
           >
@@ -558,8 +630,11 @@
             </h2>
 
             <p class="text-white/80 text-[18px] md:text-[25px] lg:text-[16px]">
-              Whether your question is about our membership plans, upcoming events, or simply need some fitness advice, don't hesitate to contact us.
-              Our dedicated team is here to assist you on fitness journey, providing support, motivation and guidance on every step of the way. 
+              Whether your question is about our membership plans, upcoming
+              events, or simply need some fitness advice, don't hesitate to
+              contact us. Our dedicated team is here to assist you on fitness
+              journey, providing support, motivation and guidance on every step
+              of the way.
             </p>
 
             <div
@@ -659,23 +734,22 @@
           </div>
         </section>
 
-        <section id="scrollToTopSection" 
-        class=" fixed bottom-[72px] lg:bottom-14 right-3.5 md:right-3.5 lg:right-3.5 flex flex-col justify-center items-center px-3.5 md:px-10 lg:px-10 z-[9999]">
-          <div class="scrollToTop flex flex-col justify-center items-center w-[50px] h-[50px]  md:w-[75px] md:h-[75px] lg:w-[50px] lg:h-[50px] bg-white rounded-full">
-            <a href="#top" aria-label="scroll to top" class="scrollToTopIcon flex flex-col justify-center items-center w-[45px] h-[45px]  md:w-[70px] md:h-[70px]  lg:w-[45px] lg:h-[45px] bg-red-600 rounded-full text-white">
+        <section
+          id="scrollToTopSection"
+          class="fixed bottom-[72px] lg:bottom-14 right-3.5 md:right-3.5 lg:right-3.5 flex flex-col justify-center items-center px-3.5 md:px-10 lg:px-10 z-[9999]"
+        >
+          <div
+            class="scrollToTop flex flex-col justify-center items-center w-[50px] h-[50px] md:w-[75px] md:h-[75px] lg:w-[50px] lg:h-[50px] bg-white rounded-full"
+          >
+            <a
+              href="#top"
+              aria-label="scroll to top"
+              class="scrollToTopIcon flex flex-col justify-center items-center w-[45px] h-[45px] md:w-[70px] md:h-[70px] lg:w-[45px] lg:h-[45px] text-[20px] md:text-4xl lg:text-[16px] bg-red-600 rounded-full text-white"
+            >
               <i class="ri-arrow-up-line"></i>
             </a>
-          </div>  
-        </section>
-
-
-        <!-- <section class="ScrollToTopSection fixed bottom-18 lg:bottom-14 right-2.5 md:right-3.5 lg:right-3.5 flex flex-col justify-center items-center px-3.5 md:px-10 lg:px-10 z-9999">
-          <div class="scrollToTop flex flex-col justify-center items-center w-[60px] h-[60px]  md:w-[75px] md:h-[75px]  lg:w-[60px] lg:h-[60px] bg-white rounded-full">
-            <a href="" class="scrollToTopIcon flex flex-col justify-center items-center w-[55px] h-[55px]  md:w-[70px] md:h-[70px]  lg:w-[55px] lg:h-[55px] bg-red-600 rounded-full">
-              <span class="material-symbols-outlined rotate-90 text-white text-8xl">arrow_back</span>
-            </a>
           </div>
-        </section> -->
+        </section>
 
         <section
           class="line w-full h-[2px] md:h-[2px] lg:h-[1px] bg-white/20"
