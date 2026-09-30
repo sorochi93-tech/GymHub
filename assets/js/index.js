@@ -10,6 +10,10 @@ const menuIcon = document.querySelector("#menuIcon");
 const mobileMenu = document.querySelector("#mobileMenu");
 
 
+window.addEventListener("load", function() {
+  document.getElementById("loader").style.display = "none"
+})
+
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 
