@@ -11,7 +11,9 @@ const mobileMenu = document.querySelector("#mobileMenu");
 
 
 window.addEventListener("load", function() {
-  document.getElementById("loader").style.display = "none"
+  setTimeout(function () {
+    document.getElementById("loader").style.display = "none"
+  }, 2000)
 })
 
 menuBtn.addEventListener("click", () => {
